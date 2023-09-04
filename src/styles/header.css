@@ -1,0 +1,77 @@
+header{
+    width: 100vw;
+    min-height: 150px;
+}
+
+*{
+    /* border: 1px solid red; */
+}
+
+.header-content{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+}
+
+.header-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 0 120px 12px black;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    width: 40%;
+}
+
+.name{
+    margin: 15px 0 15px 2rem;
+}
+
+.nav-btn{
+    background-color: black;
+    font-family: 'Poppins', serif;
+    color: white;
+    text-shadow: 0 0 1px inset black;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, .5);
+}
+
+.nav-btn:hover{
+    box-shadow: inset 0px 0px 100px black;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.about-btn{
+background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693442901/flower1_y5mj8j.png");
+}
+.projects-btn{
+background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693442803/flower6_gjhcee.png");
+}
+.music-btn{
+background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693442901/flower5_kp7nof.png");
+background-size: cover;
+}
+
+
+.Link{
+    text-decoration: none;
+}

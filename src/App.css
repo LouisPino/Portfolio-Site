@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  /* border: 1px solid red; */
+  text-decoration: none;
+}
+
+
+
+.the404{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.App{
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Poppins', serif;
+  position: relative;
+  background-image: url("../public/images/flowerback.webp");
+  background-color: black;
+}
+
+
+
+footer{
+  color: white;
+  position: relative;
+}
+
+header{
+position: absolute;
+}
+
+.name{
+  font-size: 5rem;
+  color: transparent;
+  width: fit-content;
+  /* background-image: url("../public/images/flower3.png"); */
+  background-color: white;
+  background-size: contain;
+  background-clip: text;
+}
+
+.about-main{
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#about-bio{
+width:50%;
+padding: 50px;
+}
+
+#about-bio p{
+  font-size: 1.2rem;
+}
+
+
+.home-main{
+  height: 100%;
+  min-height: 500px;
+  min-width: 100vw;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+}
+
+.chorale{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#welcome{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  font-size: 100px;
+  z-index: 3;
+  margin: 0;
+  color: white;
+} 
+
+.welcome-btn{
+position: absolute;
+bottom: 35%;
+height: 19vw;
+width: 25vw;
+z-index: 3;
+font-size: 48px;
+color: white;
+border-radius: 25px;
+border: none;
+cursor: pointer;
+opacity: .85;
+}
+
+.welcome-btn:hover .welcome-btn-text{
+  color: transparent;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: none;
+  transition: 300ms;
+}
+
+.welcome-btn-text{
+  opacity: 1;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 900;
+  text-shadow: 0 0 2px black;
+}
+
+.code-enter{
+  left: 20%;
+  background: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693607290/Fibonacci_ixwrzs.png");
+  background-color: black;
+  background-size: contain;
+}
+
+.music-enter{
+  right: 20%;
+  /* background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693606768/FlowChart_sngysi.png"); */
+  background: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693607290/Fibonacci_ixwrzs.png");
+  transform: rotateY(180deg);
+  background-size: contain;
+}
+
+.music-enter>p{
+  transform: rotateY(180deg);
+  
+}
+
+h2{
+  font-size: 48px;
+}
+
+.gif-ctr{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 40%;
+  padding: 0;
+  margin: 0;
+}
+
+.gif-ctr img{
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+  margin: 0;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}
+
+
+.headshot{
+  border-radius: 50%;;
+margin-right: 5%;
+}
+
+.skills-ctr{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+width: 85%;
+margin: auto;
+}
+
+.skill-card{
+  display: inline;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin-top: 30px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.skill-logo{
+  height: 50px;
+  width:auto;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.skill-card>h4{
+  display: inline;
+  color: black;
+  text-align: center;
+}
+
+.nav-btn:hover .link{
+  color: transparent;
+  transition: 400ms;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.link {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 300ms;
+  color: white;
+}
+
+.works {
+  color: white;
+}
+
+.works:hover {
+  color: transparent;
+  text-decoration: none;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.link:hover {
+  color: transparent;
+  transition: 400ms;
+}
+
+.here {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  z-index: 100;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(10px);
+}
+
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+}

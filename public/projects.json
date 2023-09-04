@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Bat Buster",
+      "live": "https://louispino.github.io/bat-buster/",
+      "liveTitle": "Play Game",
+      "git": "https://github.com/LouisPino/bat-buster",
+      "image": "https://user-images.githubusercontent.com/130365689/256623709-85b8ca5c-4d9e-4b58-8ade-595749066feb.png",
+      "description":"Bat Buster is a browser based arcade style game built with HTML, CSS, and JavaScript. The user uses the mouse and keyboard to move the player character while avoiding and shooting oncoming swarms of bats.",
+      "tools": "JavaScript, HTML, CSS, Bootstrap",
+      "recent": true   
+    },
+    {
+      "name": "Scenic Shenanigans",
+      "live": "https://scenic-shenanigans-edd3a3d09050.herokuapp.com/",
+      "liveTitle": "Visit Site",
+      "git": "https://github.com/LouisPino/Seaside_Shenanigans_Squad",
+      "image": "https://github.com/MNieginski/Seaside_Shenanigans_Squad/blob/main/Screenshot.png?raw=true",
+      "description":"Scenic Shenanigans is a travel planner and journal. Users can add each other to various trips to plan activities and share photos with each other.",
+      "tools":"JavaScript, MongoDB, Express, Node.js, HTML, CSS",
+      "recent": true   
+    },
+    {
+      "name": "Jaz Tsui Portfolio",
+      "live": "https://louispino.github.io/JazWebsite/",
+      "liveTitle": "Visit Site",
+      "git": "https://github.com/LouisPino/JazWebsite",
+      "image": "https://github.com/LouisPino/JazWebsite/blob/main/Screenshot%202023-08-28%20at%203.03.21%20PM.png?raw=true",
+      "description":"This website serves as a hub for documentation of the works by Toronto based multimedia artist Jasmine Tsui. Pared down full screen wireframes were designed by Jasmine and provided to me in order to create the website. We collaborated on the design and implementation over two months, leading to this final product.",
+      "tools":"JavaScript, HTML, CSS",
+      "recent": true  
+    },
+    {
+      "name": "Elemental Suite",
+      "live": "https://www.youtube.com/watch?v=83XIyVW5MeA",
+      "liveTitle": "Watch Video",
+      "git": "",
+      "image": "data:image/jpeg;base64,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",
+      "description":"The Elemental Suite is a multimedia performance co created by myself and Duo Cichorium partner Jasmine Tsui. The piece is composed of 4 movements, each relating to one of the natural elements. A different technology or combination of technologies is used to help bring that element into the performance. The first movement, Matchbox Ritual, makes use of recycled drawers as percussion instruments. The drawers are outfitted each with two homemade balanced piezo microphones, as well as an Arduino. The microphone signal is processed through the node based musical programming language Max which then sends data to the Arduinos. The Arduinos control 3 lamps for each performer, allowing musical material to be translated into lighting design in real time. The second movement, Morphogenesis, features a handmade tree-like sculpture. This sculpture is projected on using projection mapping designed in OBS. Three sections of the sculpture (roots, trunk, and foliage) are projected on individually, as well as the surrounding area of the performance space. While precisely mapping the projections was difficult, the precision provided a magical element to the projected video art and quickly became one of the most powerful moments of the whole piece. The third movement, Desiderium, makes use of homemade hydrophones (underwater microphones) to capture the sounds of water and instruments being played within it. These sounds are fed to the Ableton Live audio software for amplification and live processing of the acoustic sound. The last movement, Scintillation, combines the MUGIC motion sensor, Arduino, and Max to allow the performers to control various fans placed around the performance space, each pointed at a set of wind chimes. The fans are activated to varying speeds throughout the piece by the aimed gestures of the performer, while playing percussion. The data from the motion sensor also controls various parameters of the sound.",
+      "tools":"MAX, Arduino, OBS, Hardware Hacking",
+      "recent": true  
+    },
+    {
+      "name": "Where am I?",
+      "live": "https://www.youtube.com/playlist?list=PLWpQl3p3iO8RDFI3pge5D-e3ksYAmHMES",
+      "liveTitle": "Watch Videos",
+      "git": "",
+      "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693512967/Screenshot_2023-08-31_at_4.15.14_PM_ww5m8o.png",
+      "description":"A collection of pieces using no-input mixer and various electronics. Where am I? attempts to blur the line between performer and instrument, using custom built electronics and biological sensors to incorporate the two into a single entity.",
+      "tools":"MAX, Arduino, OBS, Hardware Hacking",
+      "recent": false  
+    }
+  ]
