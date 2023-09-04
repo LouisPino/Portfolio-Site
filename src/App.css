@@ -16,7 +16,7 @@
 }
 
 .App{
-  height: 100vh;
+  min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -24,8 +24,8 @@
   /* font-family: 'Libre Baskerville', serif; */
   font-family: 'Poppins', serif;
   position: relative;
-  background-image: url("../public/images/flowerback.webp");
   background-color: black;
+  background-image: url("../public/images/flowerback.webp");
 }
 
 
@@ -59,6 +59,8 @@ position: absolute;
 #about-bio{
 width:50%;
 padding: 50px;
+display: flex;
+flex-direction: column;
 }
 
 #about-bio p{
@@ -181,32 +183,36 @@ margin-right: 5%;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-width: 85%;
+width: 100%;
 margin: auto;
 }
 
 .skill-card{
   display: inline;
-  width: 300px;
+  width: fit-content;
+  min-width: 100px;
   display: flex;
   flex-direction: column;
   background-color: aliceblue;
-  margin-top: 30px;
+  margin-top: 10px;
   border-radius: 5px;
-  margin: 5px;
+  /* margin: 10px; */
 }
-
 .skill-logo{
   height: 50px;
   width:auto;
   margin: auto;
-  margin-top: 8px;
 }
-
-.skill-card>h4{
-  display: inline;
-  color: black;
-  text-align: center;
+ .skill-card:hover h4{
+   box-shadow: 0px 1px black;
+   transition: 300ms;
+  }
+  
+  .skill-card>h4{
+    display: inline;
+    color: black;
+    width: fit-content;
+    margin: 8px auto;
 }
 
 .nav-btn:hover .link{

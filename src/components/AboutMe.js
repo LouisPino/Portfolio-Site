@@ -1,3 +1,4 @@
+import Skills from "../components/Skills"
 import { useState, useEffect } from "react";
 
 function AboutMe() {
@@ -29,6 +30,7 @@ function AboutMe() {
 </div>
      < div className="project-card" id="about-bio">
       <p>{about.bio}</p>
+      <Skills />
     </div>
     </div>
   );

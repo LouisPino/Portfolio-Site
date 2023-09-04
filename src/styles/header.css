@@ -60,11 +60,6 @@ nav{
     transition: 300ms;
 }
 
-.nav-btn:hover .nav-btn-text{
-font-size: 24px;
-
-}
-
 
 .about-btn{
 background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693442901/flower1_y5mj8j.png");
