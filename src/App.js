@@ -33,5 +33,3 @@ export default App;
 
 
 //make responsive
-//project buttons
-//new mail logo

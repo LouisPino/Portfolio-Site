@@ -16,7 +16,7 @@ function Footer(props) {
             <img src="https://res.cloudinary.com/dsvcyich1/image/upload/v1693442901/githublogo_mbcxbi.png" alt="" />
           </a>
           <a href="mailto:LJPino95@gmail.com" target="_blank">
-            <img src="https://res.cloudinary.com/dsvcyich1/image/upload/v1693443068/mail-logo_wn7uuv.svg" />
+            <img src="https://res.cloudinary.com/dsvcyich1/image/upload/v1693848478/maillogo_ajymti.png" />
           </a>
         </div>
         <h3 className="here">© Louis Pino 2023</h3>

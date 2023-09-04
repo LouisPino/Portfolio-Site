@@ -34,10 +34,10 @@ function RecentProjects(props) {
           <h1 className="here">{project.name}</h1>
           <p>{project.description}</p>
           <div className="project-btns">
-          {project.git &&    <a href={project.git}>
+          {project.git &&    <a href={project.git} target="_blank">
            <button className="project-btn">Github</button>
           </a>}
-          <a href={project.live}>
+          <a href={project.live} target="_blank">
             <button className="project-btn">{project.liveTitle}</button>
           </a>
         </div>
