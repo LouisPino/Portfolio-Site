@@ -33,3 +33,6 @@ export default App;
 
 
 //card lift before entering Code and Main page, for code just move up whole video. For Main page, quick welcome screen so vid can load
+//make responsive
+//project buttons
+//new mail logo

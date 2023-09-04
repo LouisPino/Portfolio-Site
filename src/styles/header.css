@@ -55,11 +55,16 @@ nav{
 }
 
 .nav-btn:hover{
-    box-shadow: inset 0px 0px 120px rgba(0, 0, 0, .5);
-    cursor: pointer;
+    box-shadow: inset 0px 0px 120px;
+        cursor: pointer;
     transition: 300ms;
+    color: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
 }
 
+.nav-btn:hover .nav-btn-text{
+color: rgb(255, 4, 4)
+}
 
 .about-btn{
 background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693442901/flower1_y5mj8j.png");

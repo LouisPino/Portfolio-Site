@@ -18,7 +18,7 @@ function Header() {
 
             <nav>
         <Link to="/about">
-          <button className="nav-btn about-btn"><p className="link nav-btn-text">ABOUT</p></button>
+          <button className="nav-btn about-btn"><p className=" nav-btn-text">ABOUT</p></button>
         </Link>
         <Link to="/projects">
         <button className="nav-btn projects-btn"><p className="link nav-btn-text">PROJECTS</p></button>
