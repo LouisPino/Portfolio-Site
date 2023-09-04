@@ -47,16 +47,32 @@ object-fit: contain;
 background-color: rgb(46, 44, 42);
 color: aliceblue;
 font-size: 30px;
+transition: 300ms;
 padding: 20px;
+height: fit-content;
 }
 
 .project-btn:hover{
   border: 1px solid rgb(46, 44, 42);
-  color: rgb(46, 44, 42);
   background-color: aliceblue;
+  text-decoration: none;
   cursor: pointer;
 }
 
+.project-btn:hover .project-btn-text{
+background: linear-gradient(90deg, red, orange, yellow, green, blue, purple); 
+ animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  transition: 300ms;
+
+}
+.project-btn-text{
+  padding: 0;
+  margin: 0;
+}
 
 .projects-body>h3{
 text-align: center;
