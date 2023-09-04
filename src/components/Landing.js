@@ -5,7 +5,7 @@ function Landing(props) {
     return( 
 <div className="home-main">
     {/* <div className="black"></div> */}
-    <h2 id="welcome">Louis Pino</h2>
+    <h2 id="welcome">LOUIS PINO</h2>
     <Link to="/about"><button className="welcome-btn code-enter"><p className="welcome-btn-text">CODE</p></button></Link>
     <a href="https://www.louispino.com" target="_blank"><button className="welcome-btn music-enter"><p className="welcome-btn-text">MUSIC</p></button></a>
     
