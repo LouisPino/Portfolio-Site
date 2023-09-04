@@ -336,6 +336,7 @@ margin: auto;
 @media screen and (max-width: 1000px){
 .about-main{
   flex-direction: column;
+  margin-top: 70px;
 }
 #about-bio{
   width:75%;
@@ -344,6 +345,9 @@ margin: auto;
 .gif-ctr{
   max-width: 100%;
   height: auto;
+}
+header *{
+  display: none;
 }
 
 }
@@ -359,6 +363,9 @@ margin: auto;
   margin: 0;
   padding: 15px;
 }
+
+
+
 
 }
 

@@ -30,6 +30,7 @@ function Header() {
         {/* </Link> */}
       </nav>
       </div>
+      <img className="hamburger" src="/images/burger.png" />
     </header>
   );
 }

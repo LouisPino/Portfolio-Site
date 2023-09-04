@@ -81,3 +81,19 @@ background-size: cover;
 .Link{
     text-decoration: none;
 }
+
+
+.hamburger{
+    display: none;
+    width: 50px;
+    height: auto;
+    margin: 30px auto;
+  }
+
+  @media screen and (max-width: 1000px){
+
+    .hamburger{
+        display: block;
+    }
+
+  }

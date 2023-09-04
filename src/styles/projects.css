@@ -83,11 +83,11 @@ font-size: 48px;
 text-align: center;
 font-size: 48px;
 }
-.projects-body>h1{
+.projects-body h1{
 text-align: center;
 }
 
-.recent-projects-body>h1{
+.recent-projects-body h1{
 text-align: center;
 }
 
@@ -118,4 +118,11 @@ text-align: center;
 .project-btn{
 margin: 10px;
 }
+
+.project-info{
+  text-align: justify;
+}
+
+
+
 }
