@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 // IMPORT COMPONENTS
 import Header from "./components/Header";
 import Footer from "./components/Footer.js";
-import Landing from "./components/Landing";
+import Landing from "./pages/Landing";
 import Code from "./pages/Code";
 import _404 from "./pages/404";
 

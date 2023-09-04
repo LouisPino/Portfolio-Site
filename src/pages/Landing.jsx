@@ -1,11 +1,12 @@
+import { useEffect } from "react"
 import Landing from "../components/Landing"
-import RecentProjects from "../components/RecentProjects"
-import AboutMe from "../components/AboutMe"
-export default function Home(){
+import Welcome from "../components/Welcome"
 
+export default function Home(){
 return(
 <>
-<Landing/>
+<Welcome message="WELCOME 2 MY SITE HAVE VERY FUN" time={1000}/>
+<Landing />
 </>
 
 )

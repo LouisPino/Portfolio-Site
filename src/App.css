@@ -215,14 +215,24 @@ margin: auto;
     margin: 8px auto;
 }
 
-.nav-btn:hover .link{
-  color: transparent;
-  transition: 400ms;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  animation: animate 5s linear infinite;
-  background-clip: text;
-  -webkit-background-clip: text;
+.welcome-bg{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  min-width: 100vw;
+  background-color: aliceblue;
+  background-image: url("../public/images/chorale.png");
+  background-size: cover;
+  z-index: 3;
+  transition: 500ms;
 }
+
+.welcome-msg{
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 72px;
+}
+
 
 .link {
   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
