@@ -53,7 +53,7 @@ position: absolute;
   display: flex;
   padding: 2rem;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 #about-bio{
@@ -331,3 +331,17 @@ margin: auto;
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
 }
+
+
+
+/* first breakpoint 1380px width */
+/* change project tiles to vertical*/
+
+
+
+/* 1000px width hamburger menu, gif on top of bio */
+
+
+
+
+/* landing page needs a lot more work for responsiveness */

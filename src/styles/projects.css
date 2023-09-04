@@ -87,3 +87,26 @@ font-size: 48px;
 .tools{
   font-style: italic;
 }
+
+@media screen and (max-width: 1380px){
+
+.project-card{
+  flex-direction: column;
+}
+
+.project-image{
+  margin: 15px auto;
+}
+
+}
+
+@media screen and (max-width: 700px){
+.project-btns{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.project-btn{
+margin: 10px;
+}
+}
