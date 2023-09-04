@@ -375,7 +375,23 @@ header *{
   margin: 0;
   padding: 15px;
 }
+
+.code-enter{
+left: 5px;
+}
+.music-enter{
+  right: 5px;
+}
+.welcome-btn{
+  top: 40%;
+  width: fit-content;
+  background: black;
 }
 
+#welcome{
+  font-size: 3rem;
+}
+
+}
 
 /* landing page needs a lot more work for responsiveness */
