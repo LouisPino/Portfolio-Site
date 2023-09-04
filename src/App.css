@@ -8,11 +8,23 @@
 
 
 .the404{
-  position: absolute;
-  top: 40%;
-  width: 100%;
+margin: 175px auto 0 auto;
+  width: fit-content;
+  padding: 10px;
+  height: 70vh;
   text-align: center;
   color: white;
+  background-color: aliceblue;
+}
+
+.the404>img{
+height: 70%;
+width: auto;
+margin: 0;
+}
+
+.the404>h1{
+  color: black;
 }
 
 .App{
@@ -363,15 +375,7 @@ header *{
   margin: 0;
   padding: 15px;
 }
-
-
-
-
 }
-
-/* 1000px width hamburger menu, gif on top of bio */
-
-
 
 
 /* landing page needs a lot more work for responsiveness */
