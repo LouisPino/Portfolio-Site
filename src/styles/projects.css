@@ -83,6 +83,15 @@ font-size: 48px;
 text-align: center;
 font-size: 48px;
 }
+.projects-body>h1{
+text-align: center;
+}
+
+.recent-projects-body>h1{
+text-align: center;
+}
+
+
 
 .tools{
   font-style: italic;
