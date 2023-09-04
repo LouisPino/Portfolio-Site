@@ -1,11 +1,21 @@
 import { Link } from "react-router-dom";
 
 import "../styles/header.css"
+import { useEffect } from "react";
 
 function Header() {
-
-  //an example of an inline style for the nav tag for an initial layout - later additions, or 
-
+useEffect(()=> {
+  const hamburgerEl = document.querySelector(".hamburger");
+  const dropbtnContentEl = document.querySelector(".dropdown-content");
+   hamburgerEl.addEventListener("click", showBurger)
+  function showBurger() {
+    if (dropbtnContentEl.style.display === "block") {
+      dropbtnContentEl.style.display = "none";
+    } else {
+      dropbtnContentEl.style.display = "block";
+    }
+  }
+}, [])
 
 
   return (
@@ -30,7 +40,20 @@ function Header() {
         {/* </Link> */}
       </nav>
       </div>
+      {/* <img className="hamburger" src="/images/burger.png" /> */}
+      <div className="dropbtn" id="hamburger-div">
       <img className="hamburger" src="/images/burger.png" />
+          <div className="dropdown-content">
+          <Link to="/about" className="burger-link">
+         <p className="burger-link-text link">ABOUT</p>
+        </Link>
+          <Link to="/projects" className="burger-link">
+         <p className="burger-link-text link">PROJECTS</p>
+        </Link>
+        <a className="burger-link-text link" href="https://www.louispino.com/" target="_blank" >MUSIC </a>
+          </div>
+          </div>
+
     </header>
   );
 }
