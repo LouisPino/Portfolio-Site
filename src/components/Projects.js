@@ -34,13 +34,13 @@ function Projects(props) {
           <p>{project.description}</p>
           <div className="project-btns">
           {project.git &&    <a href={project.git}>
-           <button>Github</button>
+           <button className="project-btn">Github</button>
           </a>}
           <a href={project.live}>
-            <button>{project.liveTitle}</button>
+            <button className="project-btn">{project.liveTitle}</button>
           </a>
         </div>
-          <p>{project.tools}</p>
+          <p >{project.tools}</p>
         </div>
         {idx%2 === 1 && <img className="project-image" src={project.image} />}
       </div>

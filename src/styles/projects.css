@@ -41,6 +41,23 @@ object-fit: contain;
     width: 75%
 }
 
+.project-btn{
+  border: 1px solid transparent;
+  border-radius: 10px;
+background-color: rgb(46, 44, 42);
+color: aliceblue;
+font-size: 30px;
+padding: 20px;
+}
+
+.project-btn:hover{
+  border: 1px solid rgb(46, 44, 42);
+  color: rgb(46, 44, 42);
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+
 .projects-body>h3{
 text-align: center;
 font-size: 48px;

@@ -28,9 +28,9 @@ function AboutMe() {
   <div className="gif-ctr">
   <img src="/images/JazGif.gif"/>
 </div>
-     < div className="project-card" id="about-bio">
-      <p>{about.bio}</p>
-      <Skills />
+     <div className="project-card" id="about-bio">
+      <p className=" bio-text">{about.bio}</p>
+    <Skills />
     </div>
     </div>
   );
