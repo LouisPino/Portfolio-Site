@@ -51,14 +51,20 @@ nav{
     display: flex;
     align-items: center;
     transition: 300ms;
-    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0px 0px 100px rgba(255, 0, 0, 0.23);
 }
 
 .nav-btn:hover{
-    box-shadow: inset 0px 0px 100px black;
+    box-shadow: inset 0px 0px 120px rgba(0, 0, 0, .5);
     cursor: pointer;
     transition: 300ms;
 }
+
+.nav-btn:hover .nav-btn-text{
+font-size: 24px;
+
+}
+
 
 .about-btn{
 background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693442901/flower1_y5mj8j.png");

@@ -18,14 +18,14 @@ function Header() {
 
             <nav>
         <Link to="/about">
-          <button className="nav-btn about-btn"><p className="link">ABOUT</p></button>
+          <button className="nav-btn about-btn"><p className="link nav-btn-text">ABOUT</p></button>
         </Link>
         <Link to="/projects">
-        <button className="nav-btn projects-btn"><p className="link">PROJECTS</p></button>
+        <button className="nav-btn projects-btn"><p className="link nav-btn-text">PROJECTS</p></button>
         </Link>
         {/* <Link to="/music"> */}
      <a href="https://www.louispino.com/" target="_blank" >
-        <button className="nav-btn music-btn"><p className="link">MUSIC</p></button>
+        <button className="nav-btn music-btn"><p className="link nav-btn-text">MUSIC</p></button>
         </a>
         {/* </Link> */}
       </nav>
