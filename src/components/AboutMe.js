@@ -29,7 +29,7 @@ function AboutMe() {
   <img src="/images/JazGif.gif"/>
 </div>
      <div className="project-card" id="about-bio">
-      <p className=" bio-text">{about.bio}</p>
+      <p className="bio-text">{about.bio}</p>
     <Skills />
     </div>
     </div>
