@@ -135,7 +135,8 @@ background-size: cover;
     margin: 0.5em;
     text-align: center;
     color: transparent;
-
+    font-size: 24px;
+    font-weight: bold;
 
 }
 

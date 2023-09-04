@@ -4,9 +4,10 @@ import "../styles/header.css"
 import { useEffect } from "react";
 
 function Header() {
+  let dropbtnContentEl = {}
 useEffect(()=> {
   const hamburgerEl = document.querySelector(".hamburger");
-  const dropbtnContentEl = document.querySelector(".dropdown-content");
+   dropbtnContentEl = document.querySelector(".dropdown-content");
    hamburgerEl.addEventListener("click", showBurger)
   function showBurger() {
     if (dropbtnContentEl.style.display === "block") {
@@ -17,7 +18,11 @@ useEffect(()=> {
   }
 }, [])
 
-
+function hideBurger(){
+  if(dropbtnContentEl!== {}){
+  dropbtnContentEl.style.display = "none";
+  }
+}
   return (
     <header>
       <div className="header-black"></div>
@@ -44,13 +49,13 @@ useEffect(()=> {
       <div className="dropbtn" id="hamburger-div">
       <img className="hamburger" src="/images/burger.png" />
           <div className="dropdown-content">
-          <Link to="/about" className="burger-link">
+          <Link to="/about" className="burger-link" onClick={hideBurger}>
          <p className="burger-link-text link">ABOUT</p>
         </Link>
-          <Link to="/projects" className="burger-link">
+          <Link to="/projects" className="burger-link" onClick={hideBurger}>
          <p className="burger-link-text link">PROJECTS</p>
         </Link>
-        <a className="burger-link-text link" href="https://www.louispino.com/" target="_blank" >MUSIC </a>
+        <a className="burger-link-text link" href="https://www.louispino.com/" target="_blank" onClick={hideBurger}>MUSIC </a>
           </div>
           </div>
 
