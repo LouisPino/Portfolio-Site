@@ -5,7 +5,7 @@ import Welcome from "../components/Welcome"
 export default function Home(){
 return(
 <>
-<Welcome message="WELCOME 2 MY SITE HAVE VERY FUN" time={1000}/>
+<Welcome message="WELCOME TO MY PORTFOLIO, COME ON IN!" time={1000}/>
 <Landing />
 </>
 
