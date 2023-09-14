@@ -10,13 +10,13 @@
       "recent": true   
     },
     {
-      "name": "Scenic Shenanigans",
-      "live": "https://scenic-shenanigans-edd3a3d09050.herokuapp.com/",
+      "name": "Kindr",
+      "live": "https://graceful-pixie-5234dd.netlify.app/",
       "liveTitle": "Visit Site",
-      "git": "https://github.com/LouisPino/Seaside_Shenanigans_Squad",
-      "image": "https://github.com/MNieginski/Seaside_Shenanigans_Squad/blob/main/Screenshot.png?raw=true",
-      "description":"Scenic Shenanigans is a travel planner and journal. Users can add each other to various trips to plan activities and share photos with each other.",
-      "tools":"JavaScript, MongoDB, Express, Node.js, HTML, CSS",
+      "git": "https://github.com/LouisPino/Kindr",
+      "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1694717498/Screenshot_2023-09-14_at_2.51.32_PM_tuvzhz.png",
+      "description":"Kindr is a heartwarming app designed to inspire and spread kindness in your community and beyond. With Kindr, you can create and share meaningful good deeds for others to undertake, fostering a culture of compassion and positivity. Users can participate by completing deeds posted by fellow members or by taking on the daily challenge, making each day an opportunity to make the world a better place, one act of kindness at a time.",
+      "tools":"React, MongoDB/Mongoose, Express, Node.js, HTML, CSS, Auth0, OpenAI API",
       "recent": true   
     },
     {
@@ -38,6 +38,16 @@
       "description":"The Elemental Suite is a multimedia performance co created by myself and Duo Cichorium partner Jasmine Tsui. The piece is composed of 4 movements, each relating to one of the natural elements. A different technology or combination of technologies is used to help bring that element into the performance. The first movement, Matchbox Ritual, makes use of recycled drawers as percussion instruments. The drawers are outfitted each with two homemade balanced piezo microphones, as well as an Arduino. The microphone signal is processed through the node based musical programming language Max which then sends data to the Arduinos. The Arduinos control 3 lamps for each performer, allowing musical material to be translated into lighting design in real time. The second movement, Morphogenesis, features a handmade tree-like sculpture. This sculpture is projected on using projection mapping designed in OBS. Three sections of the sculpture (roots, trunk, and foliage) are projected on individually, as well as the surrounding area of the performance space. While precisely mapping the projections was difficult, the precision provided a magical element to the projected video art and quickly became one of the most powerful moments of the whole piece. The third movement, Desiderium, makes use of homemade hydrophones (underwater microphones) to capture the sounds of water and instruments being played within it. These sounds are fed to the Ableton Live audio software for amplification and live processing of the acoustic sound. The last movement, Scintillation, combines the MUGIC motion sensor, Arduino, and Max to allow the performers to control various fans placed around the performance space, each pointed at a set of wind chimes. The fans are activated to varying speeds throughout the piece by the aimed gestures of the performer, while playing percussion. The data from the motion sensor also controls various parameters of the sound.",
       "tools":"MAX, Arduino, OBS, Hardware Hacking",
       "recent": true  
+    },
+    {
+      "name": "Scenic Shenanigans",
+      "live": "https://scenic-shenanigans-edd3a3d09050.herokuapp.com/",
+      "liveTitle": "Visit Site",
+      "git": "https://github.com/LouisPino/Seaside_Shenanigans_Squad",
+      "image": "https://github.com/MNieginski/Seaside_Shenanigans_Squad/blob/main/Screenshot.png?raw=true",
+      "description":"Scenic Shenanigans is a travel planner and journal. Users can add each other to various trips to plan activities and share photos with each other.",
+      "tools":"Node.js, MongoDB/Mongoose, Express, HTML, CSS, OAuth2, OpenAI API",
+      "recent": false   
     },
     {
       "name": "Where am I?",
