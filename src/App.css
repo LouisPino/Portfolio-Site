@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
   /* border: 1px solid red; */
   text-decoration: none;
 }
 
+.white {
+  color: white;
+}
 
-
-.the404{
-margin: 175px auto 0 auto;
+.the404 {
+  margin: 175px auto 0 auto;
   width: fit-content;
   padding: 10px;
   height: 70vh;
@@ -17,41 +19,53 @@ margin: 175px auto 0 auto;
   background-color: aliceblue;
 }
 
-.the404>img{
-height: 70%;
-width: auto;
-margin: 0;
+.the404 > img {
+  height: 70%;
+  width: auto;
+  margin: 0;
 }
 
-.the404>h1{
+.the404 > h1 {
   color: black;
 }
 
-.App{
+.App {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* font-family: 'Libre Baskerville', serif; */
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   position: relative;
-  background-color: black;
-  background-image: url("../public/images/flowerback.webp");
+  /* background-image: url("../public/images/flowerback.webp"); */
 }
 
+.bg-color {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  animation: animate 30s infinite;
+  opacity: 0.5;
+  position: absolute;
+}
 
-
-footer{
+footer {
   color: white;
   position: relative;
 }
 
-header{
-position: absolute;
+header {
+  position: absolute;
 }
 
-.name{
+.name {
   font-size: 5rem;
   color: transparent;
   width: fit-content;
@@ -61,26 +75,30 @@ position: absolute;
   background-clip: text;
 }
 
-.about-main{
+.about-main {
   display: flex;
   padding: 2rem;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 
-#about-bio{
-width:50%;
-padding: 50px;
-display: flex;
-flex-direction: column;
-font-size: 1.2rem;
+#about-bio {
+  width: 50%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  background-color: aliceblue;
+  z-index: 1;
+  box-shadow: 4px 4px 18px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
 }
 
-.bio-text{
-padding: 50px;
+.bio-text {
+  font-size: 1rem;
 }
 
-.home-main{
+.home-main {
   height: 100%;
   min-height: 500px;
   min-width: 100vw;
@@ -90,7 +108,7 @@ padding: 50px;
   overflow: hidden;
 }
 
-.chorale{
+.chorale {
   position: absolute;
   width: 100vw;
   height: 110vh;
@@ -99,7 +117,7 @@ padding: 50px;
   top: -56px;
 }
 
-#welcome{
+#welcome {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -109,23 +127,23 @@ padding: 50px;
   z-index: 3;
   margin: 0;
   color: white;
-} 
-
-.welcome-btn{
-position: absolute;
-bottom: 35%;
-height: 19vw;
-width: 25vw;
-z-index: 3;
-font-size: 48px;
-color: white;
-border-radius: 25px;
-border: none;
-cursor: pointer;
-opacity: .85;
 }
 
-.welcome-btn:hover .welcome-btn-text{
+.welcome-btn {
+  position: absolute;
+  bottom: 35%;
+  height: 19vw;
+  width: 25vw;
+  z-index: 3;
+  font-size: 48px;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.welcome-btn:hover .welcome-btn-text {
   color: transparent;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
   animation: animate 5s linear infinite;
@@ -135,7 +153,7 @@ opacity: .85;
   transition: 300ms;
 }
 
-.welcome-btn-text{
+.welcome-btn-text {
   opacity: 1;
   width: fit-content;
   margin: 0 auto;
@@ -143,14 +161,14 @@ opacity: .85;
   text-shadow: 0 0 2px black;
 }
 
-.code-enter{
+.code-enter {
   left: 20%;
   background: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693607290/Fibonacci_ixwrzs.png");
   background-color: black;
   background-size: contain;
 }
 
-.music-enter{
+.music-enter {
   right: 20%;
   /* background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693606768/FlowChart_sngysi.png"); */
   background: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693607290/Fibonacci_ixwrzs.png");
@@ -158,16 +176,15 @@ opacity: .85;
   background-size: contain;
 }
 
-.music-enter>p{
+.music-enter > p {
   transform: rotateY(180deg);
-  
 }
 
-h2{
+h2 {
   font-size: 48px;
 }
 
-.gif-ctr{
+.gif-ctr {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -176,66 +193,65 @@ h2{
   margin: 0;
 }
 
-.gif-ctr img{
-    width: 75%;
-    height: auto;
-    object-fit: cover;
+.gif-ctr img {
+  width: 75%;
+  height: auto;
+  object-fit: cover;
   margin: 0;
   border-radius: 50%;
   transform: rotateY(180deg);
+  box-shadow: 4px 4px 18px 2px rgba(0, 0, 0, 0.5);
 }
 
-
-.headshot{
-  border-radius: 50%;;
-margin-right: 5%;
+.headshot {
+  border-radius: 50%;
+  margin-right: 5%;
 }
 
-.skills-ctr{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-width: 100%;
-margin: auto;
+.skills-ctr {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
 
-.skill-card{
+.skill-card {
   display: inline;
   width: fit-content;
   min-width: 100px;
   display: flex;
   flex-direction: column;
-  background-color: aliceblue;
   margin-top: 10px;
   border-radius: 5px;
   margin: 10px;
   padding: 18px 2px;
 }
-.skill-logo{
-  height: 50px;
-  width:auto;
+.skill-logo {
+  height: 40px;
+  width: auto;
   margin: auto;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0));
   transition: 500ms;
 }
-.skill-card:hover h4{
+.skill-card:hover h4 {
   box-shadow: 0px 1px black;
   transition: 500ms;
 }
-.skill-card:hover .skill-logo{
+.skill-card:hover .skill-logo {
   transition: 500ms;
-  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .5));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
 }
-.skill-card>h4{
-    box-shadow: none;
-    display: inline;
-    color: black;
-    width: fit-content;
-    margin: 8px auto;
-    transition: 500ms;
+.skill-card > h4 {
+  box-shadow: none;
+  display: inline;
+  color: black;
+  width: fit-content;
+  margin: 8px auto;
+  transition: 500ms;
 }
 
-.welcome-bg{
+.welcome-bg {
   position: absolute;
   top: 0;
   height: 100vh;
@@ -245,15 +261,21 @@ margin: auto;
   background-size: cover;
   z-index: 3;
   transition: 500ms;
+  background: linear-gradient(
+    217deg,
+    rgba(255, 0, 0, 1),
+    rgb(98, 0, 255) 70.71%
+  );
+  animation: animate 18s infinite;
+  opacity: 1;
 }
 
-.welcome-msg{
+.welcome-msg {
   text-align: center;
   margin-top: 40vh;
   color: white;
   font-size: 72px;
 }
-
 
 .link {
   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
@@ -315,7 +337,8 @@ margin: auto;
 }
 
 @keyframes animate {
-  0%, 100% {
+  0%,
+  100% {
     filter: hue-rotate(0deg);
   }
   50% {
@@ -344,55 +367,50 @@ margin: auto;
   filter: blur(30px);
 }
 
+@media screen and (max-width: 1000px) {
+  .about-main {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  #about-bio {
+    width: 75%;
+  }
 
-@media screen and (max-width: 1000px){
-.about-main{
-  flex-direction: column;
-  margin-top: 70px;
-}
-#about-bio{
-  width:75%;
-}
-
-.gif-ctr{
-  max-width: 100%;
-  height: auto;
-}
-header *{
-  display: none;
-}
-
+  .gif-ctr {
+    max-width: 100%;
+    height: auto;
+  }
+  header * {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 700px){
-#about-bio{
-  padding: 2px;
-  font-size: 12px;
-  width: 95%;
-}
+@media screen and (max-width: 700px) {
+  #about-bio {
+    padding: 2px;
+    font-size: 12px;
+    width: 95%;
+  }
 
-.bio-text{
-  margin: 0;
-  padding: 15px;
-}
+  .bio-text {
+    margin: 0;
+    padding: 15px;
+  }
 
-.code-enter{
-left: 5px;
-}
-.music-enter{
-  right: 5px;
-}
-.welcome-btn{
-  top: 40%;
-  width: fit-content;
-  background: black;
-  font-size: 2rem;
-}
+  .code-enter {
+    left: 5px;
+  }
+  .music-enter {
+    right: 5px;
+  }
+  .welcome-btn {
+    top: 40%;
+    width: fit-content;
+    background: black;
+    font-size: 2rem;
+  }
 
-#welcome{
-  font-size: 3rem;
+  #welcome {
+    font-size: 3rem;
+  }
 }
-
-}
-
-/* landing page needs a lot more work for responsiveness */

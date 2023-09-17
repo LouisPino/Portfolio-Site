@@ -25,7 +25,8 @@ function Projects(props) {
   const loaded = () => {
      
     return <section className="projects-body">
-      <h3 className="here">PROJECTS</h3>
+      <div className="card-color"></div>
+      <h3 className="link">PROJECTS</h3>
     {projects.map((project, idx) => (
       <div className="project-card">
         {idx%2 === 0 && <img className="project-image" src={project.image} />}

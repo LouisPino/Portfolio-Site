@@ -24,7 +24,7 @@ function RecentProjects(props) {
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return <section className="recent-projects-body">
-      <h3 className="here">FEATURED WORK</h3>
+      <h3 className="link">FEATURED WORK</h3>
     {recentProjects.map((project, idx) => {
       if(project.recent){
         console.log(project.recent);

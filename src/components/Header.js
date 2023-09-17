@@ -19,10 +19,8 @@ useEffect(()=> {
 }, [])
 
 function hideBurger(){
-  if(dropbtnContentEl!== {}){
   dropbtnContentEl.style.display = "none";
   }
-}
   return (
     <header>
       <div className="header-black"></div>
@@ -39,9 +37,9 @@ function hideBurger(){
         <button className="nav-btn projects-btn"><p className="link nav-btn-text">PROJECTS</p></button>
         </Link>
         {/* <Link to="/music"> */}
-     <a href="https://www.louispino.com/" target="_blank" >
+     {/* <a href="https://www.louispino.com/" target="_blank" >
         <button className="nav-btn music-btn"><p className="link nav-btn-text">MUSIC</p></button>
-        </a>
+        </a> */}
         {/* </Link> */}
       </nav>
       </div>
@@ -55,7 +53,7 @@ function hideBurger(){
           <Link to="/projects" className="burger-link" onClick={hideBurger}>
          <p className="burger-link-text link">PROJECTS</p>
         </Link>
-        <a className="burger-link-text link" href="https://www.louispino.com/" target="_blank" onClick={hideBurger}>MUSIC </a>
+        {/* <a className="burger-link-text link" href="https://www.louispino.com/" target="_blank" onClick={hideBurger}>MUSIC </a> */}
           </div>
           </div>
 

@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="main">
+          <div className="bg-color"></div>
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/about" element={<About />} />
