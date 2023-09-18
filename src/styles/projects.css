@@ -108,10 +108,22 @@ text-align: center;
 
 .project-card{
   flex-direction: column;
+  position: relative;
 }
 
+.project-title{
+  position: absolute;
+  top: 10px;;
+  margin: 0;
+}
 .project-image{
   margin: 15px auto;
+  margin-top: 100px;
+  order: 1;
+}
+
+.project-info{
+  order: 2;
 }
 
 }

@@ -31,7 +31,7 @@ function RecentProjects(props) {
      return  <div className="project-card">
         {idx%2 === 0 && <img className="project-image" src={project.image} />}
         <div className="project-info">
-          <h1 className="here">{project.name}</h1>
+          <h1 className="here project-title">{project.name}</h1>
           <p>{project.description}</p>
           <div className="project-btns">
           {project.git &&    <a href={project.git} target="_blank">

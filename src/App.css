@@ -79,6 +79,10 @@ header {
   background-clip: text;
 }
 
+.about-name{
+  display: none;
+}
+
 .about-main {
   display: flex;
   padding: 2rem;
@@ -389,6 +393,9 @@ h2 {
   }
   #about-bio {
     width: 75%;
+  }
+  .about-name{
+    display: block;
   }
 
   .gif-ctr {
