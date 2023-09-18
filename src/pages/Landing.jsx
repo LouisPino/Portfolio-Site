@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import Landing from "../components/Landing"
 import Welcome from "../components/Welcome"
 

@@ -27,8 +27,7 @@ function RecentProjects(props) {
       <h3 className="link">FEATURED WORK</h3>
     {recentProjects.map((project, idx) => {
       if(project.recent){
-        console.log(project.recent);
-     return  <div className="project-card">
+     return  <div className="project-card" key={project.name}>
         {idx%2 === 0 && <img className="project-image" src={project.image} />}
         <div className="project-info">
           <h1 className="here project-title">{project.name}</h1>

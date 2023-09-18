@@ -28,7 +28,7 @@ function Projects(props) {
       <div className="card-color"></div>
       <h3 className="link">PROJECTS</h3>
     {projects.map((project, idx) => (
-      <div className="project-card">
+      <div className="project-card" key={project.name}>
         {idx%2 === 0 && <img className="project-image" src={project.image} />}
         <div className="project-info">
           <h1 className="here project-title"> {project.name}</h1>

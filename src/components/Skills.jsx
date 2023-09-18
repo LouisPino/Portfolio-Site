@@ -9,12 +9,6 @@ export default function Skills(){
     };
 let skillsList = []
     useEffect(() => { getAboutData() } , []);  
-    useEffect(() => { 
-        if(skillsList.length){
-        console.log(skillsList)
-        }
-     } , [about]);  
-
 
 
 if(about){
