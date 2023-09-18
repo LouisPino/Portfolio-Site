@@ -9,6 +9,10 @@
   color: white;
 }
 
+.nopacity{
+  opacity: 0;
+}
+
 .the404 {
   margin: 175px auto 0 auto;
   width: fit-content;
@@ -80,6 +84,9 @@ header {
   padding: 2rem;
   align-items: center;
   margin-top: 90px;
+  overflow: hidden;
+  justify-content: space-between;
+  transition: 1000ms ease-in-out
 }
 
 #about-bio {
@@ -191,6 +198,7 @@ h2 {
   max-width: 40%;
   padding: 0;
   margin: 0;
+  transition: margin-left 300ms;
 }
 
 .gif-ctr img {
@@ -251,6 +259,13 @@ h2 {
   transition: 500ms;
 }
 
+.far-left{
+  margin-left: -700px;
+}
+.far-right{
+  margin-left: 2000px;
+}
+
 .welcome-bg {
   position: absolute;
   top: 0;
@@ -306,7 +321,7 @@ h2 {
 
 .here {
   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  animation: animate 5s linear infinite;
+  animation: animate 10s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -379,6 +394,7 @@ h2 {
   .gif-ctr {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
   }
   header * {
     display: none;

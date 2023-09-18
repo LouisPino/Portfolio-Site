@@ -89,6 +89,7 @@ background-size: cover;
     width: 50px;
     height: auto;
     margin: 30px auto;
+    z-index: 100;
   }
 
   @media screen and (max-width: 1000px){
@@ -96,7 +97,6 @@ background-size: cover;
     .hamburger{
         display: block;
     }
-
   }
 
 
@@ -104,6 +104,7 @@ background-size: cover;
   width: 50px;
   height: 50px;
   margin: 0 auto;
+  z-index: 100;
 }
 
 
@@ -122,7 +123,7 @@ background-size: cover;
   min-width: 160px;
   min-height: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 100;
   border-radius: 15%;
 }
 
@@ -139,9 +140,4 @@ background-size: cover;
     font-size: 24px;
     font-weight: bold;
 
-}
-
-/* Show the dropdown menu on hover */
-.dropbtn:hover .dropdown-content {
-  display: block;
 }
