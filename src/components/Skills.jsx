@@ -7,21 +7,43 @@ export default function Skills(){
       const data = await response.json();
       setAbout(data);
     };
-
+let skillsList = []
     useEffect(() => { getAboutData() } , []);  
+    useEffect(() => { 
+        if(skillsList.length){
+        console.log(skillsList)
+        }
+     } , [about]);  
 
 
 
 if(about){
-const skillsList = about.skills.map((skill)=>(
-    <div className="skill-card">
-        <img className="skill-logo " src={skill.logo}/>
+ skillsList = about.skills.map((skill)=>(
+    <div className="skill-card" key={skill.skill} >
+        <img className="skill-logo shrunk" src={skill.logo} id={skill.skill} />
     <h4>{skill.skill}</h4>
     </div>
     )   
     )
+
+
+
+
+
+let idx = 0
+const logoInt= setInterval(()=>{
+    if(idx < skillsList.length){
+const currEl = document.getElementById(about.skills[idx].skill)
+currEl.classList.remove("shrunk")
+    idx++
+    }else{
+        clearInterval(logoInt)
+    }
+}, 100)
+
+
     return(
-        <div className="skills-ctr">
+    <div className="skills-ctr">
     {skillsList}
     </div>
     )

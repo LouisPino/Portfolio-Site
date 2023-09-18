@@ -205,7 +205,7 @@ h2 {
   transition: margin-left 300ms;
 }
 
-.gif-ctr img {
+.gif {
   width: 75%;
   height: auto;
   object-fit: cover;
@@ -213,6 +213,7 @@ h2 {
   border-radius: 50%;
   transform: rotateY(180deg);
   box-shadow: 4px 4px 18px 2px rgba(0, 0, 0, 0.5);
+  transition: 500ms 1s;
 }
 
 .headshot {
@@ -230,15 +231,15 @@ h2 {
 
 .skill-card {
   display: inline;
-  width: fit-content;
   min-width: 100px;
+  min-height: 85px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   border-radius: 5px;
   margin: 10px;
-  padding: 18px 2px;
+  padding: 2px;
 }
+
 .skill-logo {
   height: 40px;
   width: auto;
@@ -246,6 +247,12 @@ h2 {
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0));
   transition: 500ms;
 }
+
+.shrunk{
+  height: 0px;
+  width: 0px;
+}
+
 .skill-card:hover h4 {
   box-shadow: 0px 1px black;
   transition: 500ms;
@@ -364,6 +371,18 @@ h2 {
     filter: hue-rotate(360deg);
   }
 }
+
+@keyframes fade-in {
+  0%{
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+
+
+
 #progressbar:before {
   content: "";
   position: absolute;
@@ -396,10 +415,12 @@ h2 {
   }
   .about-name{
     display: block;
+    text-align: center;
+    line-height: 80px;
   }
 
   .gif-ctr {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-bottom: 20px;
   }
@@ -437,3 +458,4 @@ h2 {
     font-size: 3rem;
   }
 }
+
