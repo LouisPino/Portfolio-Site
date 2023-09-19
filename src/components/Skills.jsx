@@ -21,9 +21,6 @@ if(about){
     )
 
 
-
-
-
 let idx = 0
 const logoInt= setInterval(()=>{
     if(idx < skillsList.length){

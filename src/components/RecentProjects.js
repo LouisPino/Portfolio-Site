@@ -21,6 +21,16 @@ function RecentProjects(props) {
     getProjectsData();
   }, []);
 
+  useEffect(()=>{
+    if(recentProjects?.length){
+      const recentEl = document.querySelector(".recent-projects-body")
+      setTimeout(()=> recentEl.style.transform = "translateY(0px)"
+      , 10)
+    }
+
+  },[recentProjects])
+
+
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return <section className="recent-projects-body">

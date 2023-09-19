@@ -15,16 +15,21 @@ function AboutMe() {
 
   useEffect(() => {
     const gifEl = document.querySelector(".gif");
-    if (gifEl !== null) {
-      setInterval(()=> gifEl.classList.remove("shrunk")
+    const aboutEl = document.getElementById("about-bio");
+    if (gifEl !== null && aboutEl !== null) {
+      setTimeout(()=> {
+      gifEl.style.transform = "rotateY(180deg) translateX(0px)"
+      aboutEl.style.transform = "translateX(0px)"
+      }
     , 10)
+    console.log('hit')
     }
   }, [about]);
 
   const loaded = () => (
     <div className="about-main">
       <div className="gif-ctr">
-        <img className="gif shrunk" src="/images/JazGif.gif" />
+        <img className="gif" src="/images/JazGif.gif" />
       </div>
       <Link className="Link" to="/">
         <h1 className="name link about-name">Louis Pino</h1>

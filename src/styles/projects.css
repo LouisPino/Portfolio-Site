@@ -8,6 +8,8 @@
   margin: 0 auto;
   position: relative;
   width: 100%;
+  transform: translateY(500px);
+  transition: 500ms 1s;
 }
 
 .project-card {
