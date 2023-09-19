@@ -272,7 +272,7 @@ h2 {
 .skill-card:hover .skill-logo {
   transition: 500ms;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-  animation: rotation 1s;
+  animation: rotation 1s linear infinite;
 }
 .skill-card > h4 {
   box-shadow: none;
@@ -385,6 +385,10 @@ h2 {
   }
 }
 
+.intro-rotation{
+  animation: rotation .5s;
+}
+
 @keyframes rotation {
   0%{
     rotate: 0px;
@@ -393,7 +397,6 @@ h2 {
     rotate: 359deg;
   }
 }
-
 
 
 

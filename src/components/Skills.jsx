@@ -26,12 +26,12 @@ const logoInt= setInterval(()=>{
     if(idx < skillsList.length){
 const currEl = document.getElementById(about.skills[idx].skill)
 currEl.classList.remove("shrunk")
+currEl.classList.add("intro-rotation")
     idx++
     }else{
         clearInterval(logoInt)
     }
 }, 100)
-
 
     return(
     <div className="skills-ctr">
