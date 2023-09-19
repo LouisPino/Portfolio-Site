@@ -130,6 +130,16 @@ header {
   top: -56px;
 }
 
+.mobile-landing-bg{
+  position: absolute;
+  width: 100vw;
+  height: 110vh;
+  object-fit: cover;
+  z-index: 1;
+  top: -56px;
+  display: none
+}
+
 #welcome {
   position: absolute;
   width: 100%;
@@ -464,3 +474,11 @@ h2 {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .chorale{
+    display: none
+  }
+  .mobile-landing-bg{
+    display: block;
+  }
+}
