@@ -22,7 +22,6 @@ function AboutMe() {
       aboutEl.style.transform = "translateX(0px)"
       }
     , 10)
-    console.log('hit')
     }
   }, [about]);
 

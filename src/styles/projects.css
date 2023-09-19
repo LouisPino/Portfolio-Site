@@ -114,7 +114,7 @@ text-align: center;
 
 .project-title{
   position: absolute;
-  top: 10px;;
+  top: 10px;
   margin: 0;
 }
 .project-image{
@@ -143,6 +143,10 @@ margin: 10px;
   text-align: justify;
 }
 
+.project-image{
+  margin: 15px auto;
+  margin-top: 150px;
+}
 
 
 }
