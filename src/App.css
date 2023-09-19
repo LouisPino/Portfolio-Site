@@ -481,4 +481,8 @@ h2 {
   .mobile-landing-bg{
     display: block;
   }
+  .welcome-msg {
+    font-size: 2rem;
+  }
+
 }
