@@ -159,11 +159,14 @@ header {
   width: 25vw;
   z-index: 3;
   font-size: 48px;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  opacity: 0.85;
+  opacity: 0.8;
+  background-color: black;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+
 }
 
 .welcome-btn:hover .welcome-btn-text {
@@ -186,15 +189,14 @@ header {
 
 .code-enter {
   left: 20%;
-  background: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693607290/Fibonacci_ixwrzs.png");
-  background-color: black;
+  /* background: url("../public/images/Art_Collection_Psylingual.jpeg"); */
   background-size: contain;
 }
 
 .music-enter {
   right: 20%;
   /* background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693606768/FlowChart_sngysi.png"); */
-  background: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693607290/Fibonacci_ixwrzs.png");
+  /* background: url("../public/images/Art_Collection_Psylingual.jpeg"); */
   transform: rotateY(180deg);
   background-size: contain;
 }
@@ -223,7 +225,7 @@ h2 {
   object-fit: cover;
   margin: 0;
   border-radius: 50%;
-  transform: rotateY(180deg) translateX(1000px);
+  transform: translateX(-1000px);
   box-shadow: 4px 4px 18px 2px rgba(0, 0, 0, 0.5);
   transition: 500ms;
 }

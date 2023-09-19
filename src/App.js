@@ -41,7 +41,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/about" element={<About scrollPosition={scrollPosition}/>} />
-          <Route exact path="/projects" element={<Code scrollPosition={scrollPosition}/>} />
+          <Route exact path="/projects" element={<Code scrollPosition={scrollPosition} setScrollPosition={setScrollPosition}/>} />
           <Route  path="/*" element={<_404 />} />
         </Routes>
       </div>

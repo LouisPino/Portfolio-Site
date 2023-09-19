@@ -18,7 +18,7 @@ function AboutMe() {
     const aboutEl = document.getElementById("about-bio");
     if (gifEl !== null && aboutEl !== null) {
       setTimeout(()=> {
-      gifEl.style.transform = "rotateY(180deg) translateX(0px)"
+      gifEl.style.transform = "translateX(0px)"
       aboutEl.style.transform = "translateX(0px)"
       }
     , 10)
@@ -28,7 +28,7 @@ function AboutMe() {
   const loaded = () => (
     <div className="about-main">
       <div className="gif-ctr">
-        <img className="gif" src="/images/JazGif.gif" />
+        <img className="gif" src="/images/Pinogif.gif" />
       </div>
       <Link className="Link" to="/">
         <h1 className="name link about-name">Louis Pino</h1>
