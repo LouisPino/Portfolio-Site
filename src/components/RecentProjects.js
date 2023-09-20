@@ -24,8 +24,8 @@ function RecentProjects(props) {
   useEffect(()=>{
     if(recentProjects?.length){
       const recentEl = document.querySelector(".recent-projects-body")
-      setTimeout(()=> recentEl.style.transform = "translateY(0px)"
-      , 300)
+      setTimeout(()=> {recentEl.style.transform = "translateY(0px)"}
+      , 10)
     }
 
   },[recentProjects])

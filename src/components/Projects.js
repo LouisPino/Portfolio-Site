@@ -20,7 +20,8 @@ function Projects({scrollPosition, setScrollPosition}) {
 
 if(projects?.length){
   const projectCards = projects.map((project, idx) => (
-    <div className="project-card" key={project.name} id={idx} style={{transform: idx === 0 ? "" : idx%2===0? 'translateX(100vw)' : 'translateX(-100vw)'}}>
+    <div className="project-card" key={project.name} id={idx} style={{transform: idx === 0 ? "translateX(100vw)" : idx%2===0? 'translateX(100vw)' : 'translateX(-100vw)'}}>
+      {setScrollPosition(1)}
         {idx%2 === 0 && <img className="project-image" src={project.image}  />}
         <div className="project-info">
           <h1 className="here project-title"> {project.name}</h1>
@@ -43,6 +44,7 @@ if(projects?.length){
       if(count < projects.length){
       if (scrollPosition >= limit){
         const currentProjectEl = document.getElementById(projectCards[count].props.id)
+        console.log(count)
         if(currentProjectEl){
           currentProjectEl.style.transform = "translateX(0px)"
         }

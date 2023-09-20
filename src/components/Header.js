@@ -26,7 +26,7 @@ function hideBurger(){
   let progress = document.getElementById("progressbar");
   let totalHeight = document.body.scrollHeight - window.innerHeight;
   window.onscroll = function () {
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    let progressHeight = (window.scrollY / totalHeight) * 100;
     if(progress){
     progress.style.height = progressHeight + "%";
   }

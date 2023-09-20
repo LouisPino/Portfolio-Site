@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-export default function Welcome({message, time}){
+export default function Welcome({message, time, message2}){
     useEffect(()=>{
         const welcomeEl = document.querySelector(".welcome-bg")
         setTimeout(()=>welcomeEl.style.top = (welcomeEl.offsetHeight*-1)+"px", time)
@@ -8,7 +8,7 @@ export default function Welcome({message, time}){
 return(
     <>
     <div className="welcome-bg">
-     <h1 className="welcome-msg">{message}</h1>
+     <h1 className="welcome-msg">{message}<br/><span>{message2}</span></h1>
     </div>
     </>
 )
