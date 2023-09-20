@@ -47,7 +47,6 @@ if(projects?.length){
           currentProjectEl.style.transform = "translateX(0px)"
         }
         setLimit(currentProjectEl.getBoundingClientRect().top + (count*500))
-        console.log(scrollPosition, currentProjectEl.getBoundingClientRect().top - (count*100))
         setCount(count+1)
       }
     }

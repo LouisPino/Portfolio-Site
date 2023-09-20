@@ -21,8 +21,21 @@ useEffect(()=> {
 function hideBurger(){
   dropbtnContentEl.style.display = "none";
   }
+
+
+  let progress = document.getElementById("progressbar");
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
+  window.onscroll = function () {
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    if(progress){
+    progress.style.height = progressHeight + "%";
+  }
+}
+
   return (
     <header>
+          <div id="progressbar"></div>
+    <div id="scrollpath"></div>
       <div className="header-black"></div>
       <div className="header-content">
       <Link className="Link" to="/">
@@ -57,6 +70,9 @@ function hideBurger(){
           </div>
           </div>
 
+        
+      
+       
     </header>
   );
 }

@@ -5,8 +5,6 @@ import Skills from "../components/Skills"
 import { useEffect, useState } from "react"
 export default function About({scrollPosition}){
 
-console.log(scrollPosition)
-
 return(
 <>
 <Welcome message="" time={0}/>
