@@ -404,7 +404,10 @@ h2 {
     height: auto;
     margin-bottom: 20px;
   }
-  header * {
+  /* header * {
+    display: none;
+  } */
+  .header-content *, .header-black {
     display: none;
   }
 }
