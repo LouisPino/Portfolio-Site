@@ -78,7 +78,6 @@ header {
   font-size: 5rem;
   color: transparent;
   width: fit-content;
-  /* background-image: url("../public/images/flower3.png"); */
   background-color: white;
   background-size: contain;
   background-clip: text;
@@ -444,10 +443,10 @@ h2 {
 
 @media screen and (max-width: 500px) {
   .chorale{
-    display: none
+    /* display: none */
   }
   .mobile-landing-bg{
-    display: block;
+    /* display: block; */
   }
   .welcome-msg {
     font-size: 2rem;
