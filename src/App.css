@@ -302,8 +302,8 @@ h2 {
   top: 0;
   height: 100vh;
   min-width: 100vw;
-  background-color: aliceblue;
-  background-image: url("../public/images/chorale.png");
+  /* background-color: aliceblue; */
+  /* background-image: url("../public/images/chorale.png"); */
   background-size: cover;
   z-index: 3;
   transition: 500ms;

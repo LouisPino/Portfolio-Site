@@ -28,7 +28,7 @@ function AboutMe() {
   const loaded = () => (
     <div className="about-main">
       <div className="gif-ctr">
-        <img className="gif" src="/images/Pinogif.gif" />
+        <img className="gif" src="/images/pinogif.gif" />
       </div>
       <Link className="Link" to="/">
         <h1 className="name link about-name">Louis Pino</h1>
