@@ -159,18 +159,18 @@ header {
 .welcome-btn {
   position: absolute;
   bottom: 35%;
-  height: 19vw;
-  width: 25vw;
+  height: 17vw;
+  width: 27vw;
   z-index: 3;
   font-size: 48px;
   color: rgb(255, 255, 255);
-  border-radius: 25px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
-  background-color: black;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
-
+  opacity: .9;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+  background: url("../public/images/Twirl 1.png");
+  background-size: 100% 100%;
 }
 
 .welcome-btn:hover .welcome-btn-text {
@@ -193,16 +193,12 @@ header {
 
 .code-enter {
   left: 20%;
-  /* background: url("../public/images/Art_Collection_Psylingual.jpeg"); */
-  background-size: contain;
 }
 
 .music-enter {
   right: 20%;
-  /* background-image: url("https://res.cloudinary.com/dsvcyich1/image/upload/v1693606768/FlowChart_sngysi.png"); */
-  /* background: url("../public/images/Art_Collection_Psylingual.jpeg"); */
   transform: rotateY(180deg);
-  background-size: contain;
+
 }
 
 .music-enter > p {
@@ -424,15 +420,14 @@ h2 {
   }
 
   .code-enter {
-    left: 5px;
+    left: 16vw;
   }
   .music-enter {
-    right: 5px;
+    right: 16vw
   }
   .welcome-btn {
     top: 40%;
     width: fit-content;
-    background: black;
     font-size: 2rem;
   }
 
