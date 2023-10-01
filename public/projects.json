@@ -6,7 +6,7 @@
     "git": "https://github.com/LouisPino/audition-assistant",
     "image": "https://user-images.githubusercontent.com/130365689/271838718-b0012ea2-b45c-42ab-9496-94c7245af18b.png",
     "description":"This app is an all in one music practice assistant. It features a multifunctional metronome, practice journal, and audition planner.",
-    "tools": "Python, Django, React, JavaScript, HTML, CSS, Materialize, Heroku, Howler.js, Open Opus API",
+    "tools": "Python, Django, React, PostgreSQL, JavaScript, HTML, CSS, Materialize, Heroku, Howler.js, Open Opus API",
     "recent": true   
   },
     {
