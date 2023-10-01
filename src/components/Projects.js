@@ -34,7 +34,7 @@ if(projects?.length){
             <button className="project-btn"><p className="project-btn-text">{project.liveTitle}</p></button>
           </a>
         </div>
-          <p>{project.tools}</p>
+          <p className="tools">{project.tools}</p>
         </div>
         {idx%2 === 1 && <img className="project-image" src={project.image}/>}
       </div>

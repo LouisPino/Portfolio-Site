@@ -1,4 +1,14 @@
 [
+  {
+    "name": "Audition Assistant",
+    "live": "https://audition-assistant-2f2eaeaa2ec9.herokuapp.com/about/",
+    "liveTitle": "Visit Site",
+    "git": "https://github.com/LouisPino/audition-assistant",
+    "image": "https://user-images.githubusercontent.com/130365689/271838718-b0012ea2-b45c-42ab-9496-94c7245af18b.png",
+    "description":"This app is an all in one music practice assistant. It features a multifunctional metronome, practice journal, and audition planner.",
+    "tools": "Python, Django, React, JavaScript, HTML, CSS, Materialize, Heroku, Howler.js, Open Opus API",
+    "recent": true   
+  },
     {
       "name": "Bat Buster",
       "live": "https://louispino.github.io/bat-buster/",
@@ -27,7 +37,7 @@
       "image": "https://github.com/LouisPino/JazWebsite/blob/main/Screenshot%202023-08-28%20at%203.03.21%20PM.png?raw=true",
       "description":"This website serves as a hub for documentation of the works by Toronto based multimedia artist Jasmine Tsui. Pared down full screen wireframes were designed by Jasmine and provided to me in order to create the website. We collaborated on the design and implementation over two months, leading to this final product.",
       "tools":"JavaScript, HTML, CSS",
-      "recent": true  
+      "recent": false  
     },
     {
       "name": "Elemental Suite",
