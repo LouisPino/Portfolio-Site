@@ -4,6 +4,7 @@
   position: relative;
   width: 100%;
 }
+
 .recent-projects-body {
   margin: 0 auto;
   position: relative;
@@ -24,10 +25,10 @@
 
 
 .project-image {
- width: 50%;
- min-width: 50%;
- padding: 10px;
-object-fit: contain;
+  width: 50%;
+  min-width: 50%;
+  padding: 10px;
+  object-fit: contain;
 }
 
 .project-info {
@@ -38,38 +39,37 @@ object-fit: contain;
   padding: 50px;
 }
 
-.project-info>h1{
-font-size: 3rem;
+.project-info>h1 {
+  font-size: 3rem;
 
 }
 
 .project-btns {
-    display: flex;
-    justify-content: space-around;
-    width: 75%
+  display: flex;
+  justify-content: space-around;
+  width: 75%
 }
 
-.project-btn{
+.project-btn {
   border: 1px solid transparent;
   border-radius: 10px;
-background-color: rgb(46, 44, 42);
-color: aliceblue;
-font-size: 30px;
-transition: 300ms;
-padding: 20px;
-height: fit-content;
+  background-color: rgb(46, 44, 42);
+  color: aliceblue;
+  font-size: 30px;
+  transition: 300ms;
+  padding: 20px;
+  height: fit-content;
 }
 
-.project-btn:hover{
+.project-btn:hover {
   border: 1px solid rgb(46, 44, 42);
-  background-color: aliceblue;
   text-decoration: none;
   cursor: pointer;
 }
 
-.project-btn:hover .project-btn-text{
-background: linear-gradient(90deg, red, orange, yellow, green, blue, purple); 
- animation: animate 5s linear infinite;
+.project-btn:hover .project-btn-text {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -77,77 +77,81 @@ background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
   transition: 300ms;
 
 }
-.project-btn-text{
+
+.project-btn-text {
   padding: 0;
   margin: 0;
 }
 
-.projects-body>h3{
-text-align: center;
-font-size: 48px;
+.projects-body>h3 {
+  text-align: center;
+  font-size: 48px;
 }
 
-.recent-projects-body>h3{
-text-align: center;
-font-size: 48px;
-}
-.projects-body h1{
-text-align: center;
+.recent-projects-body>h3 {
+  text-align: center;
+  font-size: 48px;
 }
 
-.recent-projects-body h1{
-text-align: center;
+.projects-body h1 {
+  text-align: center;
+}
+
+.recent-projects-body h1 {
+  text-align: center;
 }
 
 
 
-.tools{
+.tools {
   font-style: italic;
   text-align: center;
 }
 
-@media screen and (max-width: 1380px){
+@media screen and (max-width: 1380px) {
 
-.project-card{
-  flex-direction: column;
-  position: relative;
-}
+  .project-card {
+    flex-direction: column;
+    position: relative;
+  }
 
-.project-title{
-  position: absolute;
-  top: 10px;
-  margin: 0;
-}
-.project-image{
-  margin: 15px auto;
-  margin-top: 100px;
-  order: 1;
-}
+  .project-title {
+    position: absolute;
+    top: 10px;
+    margin: 0;
+  }
 
-.project-info{
-  order: 2;
-}
+  .project-image {
+    margin: 15px auto;
+    margin-top: 100px;
+    order: 1;
+  }
 
-}
+  .project-info {
+    order: 2;
+  }
 
-@media screen and (max-width: 700px){
-.project-btns{
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-.project-btn{
-margin: 10px;
 }
 
-.project-info{
-  text-align: justify;
-}
+@media screen and (max-width: 700px) {
+  .project-btns {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
-.project-image{
-  margin: 15px auto;
-  margin-top: 150px;
-}
+  .project-btn {
+    margin: 10px;
+  }
+
+  .project-info {
+    text-align: justify;
+  }
+
+  .project-image {
+    margin: 15px auto;
+    margin-top: 150px;
+  }
 
 
 }
