@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   /* border: 1px solid red; */
   text-decoration: none;
@@ -9,11 +10,12 @@
   color: white;
 }
 
-.nopacity{
+.nopacity {
   opacity: 0;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -28,13 +30,13 @@ html, body {
   background-color: aliceblue;
 }
 
-.the404 > img {
+.the404>img {
   height: 70%;
   width: auto;
   margin: 0;
 }
 
-.the404 > h1 {
+.the404>h1 {
   color: black;
 }
 
@@ -53,11 +55,9 @@ html, body {
 .bg-color {
   height: 100%;
   width: 100%;
-  background: linear-gradient(
-      217deg,
+  background: linear-gradient(217deg,
       rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
+      rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   animation: animate 30s infinite;
@@ -83,7 +83,7 @@ header {
   background-clip: text;
 }
 
-.about-name{
+.about-name {
   display: none;
 }
 
@@ -107,7 +107,7 @@ header {
   z-index: 1;
   box-shadow: 4px 4px 18px 2px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  transform:translateX(1300px);
+  transform: translateX(1300px);
   transition: 500ms;
 }
 
@@ -134,7 +134,7 @@ header {
   top: -56px;
 }
 
-.mobile-landing-bg{
+.mobile-landing-bg {
   position: absolute;
   width: 100vw;
   height: 110vh;
@@ -156,12 +156,20 @@ header {
   color: white;
 }
 
-.welcome-btn {
-  position: absolute;
+.welcome-btns {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
   bottom: 35%;
+  z-index: 3;
+  margin: auto auto;
+}
+
+.welcome-btn {
   height: 17vw;
   width: 27vw;
-  z-index: 3;
+  min-width: 250px;
+  min-height: 160px;
   font-size: 48px;
   color: rgb(255, 255, 255);
   border-radius: 6px;
@@ -201,7 +209,7 @@ header {
 
 }
 
-.music-enter > p {
+.music-enter>p {
   transform: rotateY(180deg);
 }
 
@@ -262,7 +270,7 @@ h2 {
   transition: 500ms;
 }
 
-.shrunk{
+.shrunk {
   height: 0px;
   width: 0px;
 }
@@ -271,12 +279,14 @@ h2 {
   box-shadow: 0px 1px black;
   transition: 500ms;
 }
+
 .skill-card:hover .skill-logo {
   transition: 500ms;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
   animation: rotation 1s linear infinite;
 }
-.skill-card > h4 {
+
+.skill-card>h4 {
   box-shadow: none;
   display: inline;
   color: black;
@@ -285,10 +295,11 @@ h2 {
   transition: 500ms;
 }
 
-.far-left{
+.far-left {
   margin-left: -700px;
 }
-.far-right{
+
+.far-right {
   margin-left: 2000px;
 }
 
@@ -300,11 +311,9 @@ h2 {
   background-size: cover;
   z-index: 3;
   transition: 500ms;
-  background: linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 1),
-    rgb(98, 0, 255) 70.71%
-  );
+  background: linear-gradient(217deg,
+      rgba(255, 0, 0, 1),
+      rgb(98, 0, 255) 70.71%);
   animation: animate 18s infinite;
   opacity: 1;
 }
@@ -315,10 +324,12 @@ h2 {
   color: white;
   font-size: 72px;
 }
-.welcome-msg>span{
+
+.welcome-msg>span {
   font-size: 42px;
   font-style: italic;
 }
+
 .link {
   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
   animation: animate 5s linear infinite;
@@ -357,23 +368,26 @@ h2 {
 
 
 @keyframes animate {
+
   0%,
   100% {
     filter: hue-rotate(0deg);
   }
+
   50% {
     filter: hue-rotate(360deg);
   }
 }
 
-.intro-rotation{
+.intro-rotation {
   animation: rotation .5s;
 }
 
 @keyframes rotation {
-  0%{
+  0% {
     rotate: 0px;
   }
+
   100% {
     rotate: 359deg;
   }
@@ -385,10 +399,12 @@ h2 {
     flex-direction: column;
     margin-top: 70px;
   }
+
   #about-bio {
     width: 75%;
   }
-  .about-name{
+
+  .about-name {
     display: block;
     text-align: center;
     line-height: 80px;
@@ -399,10 +415,12 @@ h2 {
     height: auto;
     margin-bottom: 20px;
   }
+
   /* header * {
     display: none;
   } */
-  .header-content *, .header-black {
+  .header-content *,
+  .header-black {
     display: none;
   }
 }
@@ -419,16 +437,14 @@ h2 {
     padding: 15px;
   }
 
-  .code-enter {
-    left: 16vw;
-  }
-  .music-enter {
-    right: 16vw
-  }
   .welcome-btn {
-    top: 40%;
-    width: fit-content;
     font-size: 2rem;
+    margin-bottom: 24px;
+  }
+
+  .welcome-btns {
+    flex-direction: column;
+    text-align: center;
   }
 
   #welcome {
@@ -437,12 +453,6 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-  .chorale{
-    /* display: none */
-  }
-  .mobile-landing-bg{
-    /* display: block; */
-  }
   .welcome-msg {
     font-size: 2rem;
   }
