@@ -40,6 +40,12 @@ body {
   color: black;
 }
 
+.loading-h1 {
+  color: white;
+  text-align: center;
+  margin-top: 160px;
+}
+
 .App {
   min-height: 100vh;
   min-width: 100vw;

@@ -1,9 +1,53 @@
 {
-    "name": "Louis Pino",
-    "email": "LJPino95@gmail.com",
-    "headshot": "./images/headshot.jpeg",
-    "bio": "I am a software engineer and professional musician living in Toronto, Ontario. Drawing from my musical experience, I bring a strong sense of time management, adaptability, and creative problem-solving to my software development projects. With over a decade of experience in experimental music technology, I am accustomed to using technology to solve complex problems with stage-ready dependability, ensuring success under even the most demanding deadlines and high-pressure situations. I embrace challenges with a harmonious blend of creativity and technical precision, and am committed to leveraging my diverse skill set to drive innovation and excellence in the creation of interactive full-stack applications.",
-    "skills":[{"skill": "Python", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693604411/pngwing.com_1_lnrpbt.png"}, {"skill": "JavaScript", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693604482/pngwing.com_2_zdekht.png"}, {"skill": "React", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693604504/pngwing.com_3_vwpucr.png"}, {"skill": "Express", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606227/pngwing.com_5_es2sih.png"}, {"skill": "MongoDB", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606289/pngwing.com_6_tdclt9.png"}, {"skill": "Django", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606421/pngwing.com_7_gzvzyd.png"}, {"skill": "HTML", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606445/pngwing.com_8_lpqndo.png"}, {"skill": "CSS", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606445/pngwing.com_9_dopcpf.png"}, {"skill": "Max", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606335/Logo_Max_8_software_ddsewh.jpg"}, {"skill": "Arduino", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606459/pngwing.com_10_xbtwrv.png"}, {"skill": "SQL", "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1695079537/Sql_data_base_with_logo_ecxmqz.png"}]
-  }
-  
-  
+  "name": "Louis Pino",
+  "email": "LJPino95@gmail.com",
+  "headshot": "./images/headshot.jpeg",
+  "bio": "I am a software engineer and professional musician living in Toronto, Ontario. Drawing from my musical experience, I bring a strong sense of time management, adaptability, and creative problem-solving to my software development projects. With over a decade of experience in experimental music technology, I am accustomed to using technology to solve complex problems with stage-ready dependability, ensuring success under even the most demanding deadlines and high-pressure situations. I embrace challenges with a harmonious blend of creativity and technical precision, and am committed to leveraging my diverse skill set to drive innovation and excellence in the creation of interactive full-stack applications.",
+  "skills": [
+    {
+      "skill": "Python",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693604411/pngwing.com_1_lnrpbt.png"
+    },
+    {
+      "skill": "JavaScript",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693604482/pngwing.com_2_zdekht.png"
+    },
+    {
+      "skill": "React",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693604504/pngwing.com_3_vwpucr.png"
+    },
+    {
+      "skill": "Express",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606227/pngwing.com_5_es2sih.png"
+    },
+    {
+      "skill": "MongoDB",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606289/pngwing.com_6_tdclt9.png"
+    },
+    {
+      "skill": "Django",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606421/pngwing.com_7_gzvzyd.png"
+    },
+    {
+      "skill": "HTML",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606445/pngwing.com_8_lpqndo.png"
+    },
+    {
+      "skill": "CSS",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606445/pngwing.com_9_dopcpf.png"
+    },
+    {
+      "skill": "Max",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606335/Logo_Max_8_software_ddsewh.jpg"
+    },
+    {
+      "skill": "Arduino",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693606459/pngwing.com_10_xbtwrv.png"
+    },
+    {
+      "skill": "SQL",
+      "logo": "https://res.cloudinary.com/dsvcyich1/image/upload/v1695079537/Sql_data_base_with_logo_ecxmqz.png"
+    }
+  ],
+  "musicbio": "Louis Pino is a percussionist and electronicist whose work spans a breadth of musical genres and other media, including improvisation, composed theater, pop, and electroacoustic music. As a soloist, Pino prefers to work on music incorporating theatrical elements and the use of technology, and has performed solo recitals of entirely theatrical music, as well as those with entirely electroacoustic music. Pino’s most recent creative projects have been writing music for his pop band, and the curation and production of two back to back concerts featuring his two recently formed chamber ensembles, Tilikum Percussion Trio, and Joyce To/Louis Pino, focusing on contemporary concert music and improvised experimental music respectively. Also on this bill was his solo performance of Roger Reynolds’s new 30 minue theatrical percussion solo Here and There. His latest technological ventures have been the composition of a live generative video and percussion solo with the use of the prototype MUGIC motion sensor at Future Music Lab under Mari Kimura, as well as incorporating the sensor into live sound and lighting design for an abridged production of The Tempest. Pino is also an active chamber musician and has performed with the Bob Becker Ensemble, Din of Shadows experimental music-theatre company, and regularly performs with TorQ Percussion Quartet. As an orchestral player, Pino was recently awarded the National Youth Orchestra of Canada’s Award of Excellence and performs regularly with the Kingston and Thunder Bay Symphonies. When not working on music, Pino is probably at home in Toronto brushing his cat Tilly. Pino holds a BMus from Oberlin Conservatory where he studied percussion with Michael Rosen and Technology in Music and Related Arts with Aurie Hsu and Joo Won Park, along with a MMus in percussion from the University of Toronto under Aiyun Huang, Beverly Johnston, John Rudolph, and Charles Settle."
+}

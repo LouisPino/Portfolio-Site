@@ -153,5 +153,13 @@
     margin-top: 150px;
   }
 
+  .project-card {
+    width: 95vw;
+  }
+
+  #about-bio {
+    width: 95vw
+  }
+
 
 }

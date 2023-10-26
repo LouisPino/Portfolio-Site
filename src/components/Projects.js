@@ -16,12 +16,11 @@ function Projects({ scrollPosition, setScrollPosition }) {
     setScrollPosition(0)
   }, []);
 
-  const location = useLocation()
-
+  const atAbout = useLocation().pathname.slice(-5) === "about"
 
   if (projects?.length) {
     const projectCards = projects.filter((project) => {
-      if (location.pathname === "/about" && !project.recent) {
+      if (atAbout && !project.recent) {
         return false
       } else {
         return true
@@ -65,12 +64,11 @@ function Projects({ scrollPosition, setScrollPosition }) {
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
-        <h3 className="link">PROJECTS</h3>
+        <h3 className="link">{atAbout ? "RECENT PROJECTS" : "PROJECTS"}</h3> :
         {projectCards}
       </section>
-
       :
-      <h1>Loading...</h1>;
+      <h1 className="loading-h1">Loading...</h1>;
   }
 
 
