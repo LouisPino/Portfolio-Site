@@ -21,23 +21,20 @@ body {
 }
 
 .the404 {
-  margin: 175px auto 0 auto;
-  width: fit-content;
+  margin: 175px auto;
+  width: 100%;
   padding: 10px;
   height: 70vh;
   text-align: center;
   color: white;
-  background-color: aliceblue;
+  z-index: 100;
+  position: absolute;
 }
 
 .the404>img {
   height: 70%;
   width: auto;
   margin: 0;
-}
-
-.the404>h1 {
-  color: black;
 }
 
 .loading-h1 {
@@ -391,7 +388,7 @@ h2 {
 
 .flip {
   /* animation: flip .5s ease-in-out; */
-  animation: flipp .5s;
+  animation: flip .5s;
 }
 
 @keyframes rotation {
@@ -404,7 +401,7 @@ h2 {
   }
 }
 
-@keyframes flipp {
+@keyframes flip {
   0% {
     transform: rotateY(0);
   }
