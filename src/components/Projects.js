@@ -14,7 +14,16 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   useEffect(() => {
     getProjectsData();
     setScrollPosition(0)
+    setCount(0)
+    setLimit(1)
+    console.log('hit')
   }, []);
+
+  useEffect(() => {
+    setCount(0)
+    setLimit(1)
+    console.log('hit')
+  }, [music]);
 
   const atAbout = useLocation().pathname.slice(-5) === "about"
 
@@ -38,8 +47,8 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
         }
       }
     }).map((project, idx) => (
-      // <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
-      <div className="project-card" key={project.name} id={idx}>
+      <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
+        {/* <div className="project-card" key={project.name} id={idx}> */}
         {setScrollPosition(1)}
         {idx % 2 === 0 && <img className="project-image" src={project.image} />}
         <div className="project-info">

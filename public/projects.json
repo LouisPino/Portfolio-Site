@@ -84,14 +84,38 @@
     "tech": true
   },
   {
-    "name": "Bach Violin Sonata",
-    "live": "https://www.youtube.com/playlist?list=PLWpQl3p3iO8RDFI3pge5D-e3ksYAmHMES",
-    "liveTitle": "Watch Videos",
+    "name": "All At Once",
+    "live": "https://louispino.bandcamp.com/album/all-at-once",
+    "liveTitle": "Listen",
     "git": "",
-    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1693512967/Screenshot_2023-08-31_at_4.15.14_PM_ww5m8o.png",
-    "description": "A collection of pieces using no-input mixer and various electronics. Where am I? attempts to blur the line between performer and instrument, using custom built electronics and biological sensors to incorporate the two into a single entity.",
+    "image": "https://f4.bcbits.com/img/a1678755874_16.jpg",
+    "description": "My first album, using no inpput mixer/equalizer, percussion, and various softwares",
     "tools": "MAX, Arduino, OBS, Hardware Hacking",
-    "recent": false,
+    "recent": true,
+    "music": true,
+    "tech": false
+  },
+  {
+    "name": "Here and There",
+    "live": "https://www.youtube.com/watch?v=6r3VmnepRQY",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://f4.bcbits.com/img/a1678755874_16.jpg",
+    "description": "Here and There by Roger Reynolds. Performed on March 13th, 2020 at Array Space, Toronto",
+    "tools": "MAX, Arduino, OBS, Hardware Hacking",
+    "recent": true,
+    "music": true,
+    "tech": false
+  },
+  {
+    "name": "Three Roses",
+    "live": "https://www.youtube.com/watch?v=NPQ4NWxeiL4",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://f4.bcbits.com/img/a1678755874_16.jpg",
+    "description": "Three Roses is a quartet for percussion, incorporating 2 technological devices to give the performers control over lighting and sound design. First is the MUGIC, a gestural sensor developed by violinist Mari Kimura, which you can see on each of the players’ hands. Second is the Arduino which controls the lights, and through the software Max MSP can respond to the gestures of the performers captured by the MUGIC. This piece was commissioned by Aiyun Huang for the TaPIR lab in the early stages of COVID, and as such has gone through multiple iterations from live concert performance, to remote collaboration, and eventually settled as an in person recording project. ",
+    "tools": "MAX, Arduino, OBS, Hardware Hacking",
+    "recent": true,
     "music": true,
     "tech": false
   }

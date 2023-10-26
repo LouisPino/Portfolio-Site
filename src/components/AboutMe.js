@@ -28,7 +28,7 @@ function AboutMe({ music, setMusic }) {
   const loaded = () => (
     <div className="about-main">
       <div className="gif-ctr">
-        <img className="gif" src="/images/pinogif.gif" />
+        <img className="gif" src={!music ? about.headshot : about.musicheadshot} />
       </div>
       <Link className="Link" to="/">
         <h1 className="name link about-name">Louis Pino</h1>
