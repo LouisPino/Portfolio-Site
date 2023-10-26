@@ -16,7 +16,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     setScrollPosition(0)
     setCount(0)
     setLimit(1)
-    console.log('hit')
   }, []);
 
   useEffect(() => {
