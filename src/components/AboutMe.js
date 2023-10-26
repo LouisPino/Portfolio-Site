@@ -28,18 +28,18 @@ function AboutMe({ music, setMusic }) {
   const loaded = () => (
     <div className="about-main">
       <div className="gif-ctr">
-        <img className="gif" src={!music ? about.headshot : about.musicheadshot} />
+        <img className="gif flippable" src={!music ? about.headshot : about.musicheadshot} />
       </div>
       <Link className="Link" to="/">
         <h1 className="name link about-name">Louis Pino</h1>
       </Link>{
         !music ?
-          <div className="about-card" id="about-bio">
+          <div className="about-card flippable" id="about-bio">
             <p className="bio-text">{about.bio}</p>
             <Skills />
           </div>
           :
-          <div className="about-card" id="about-bio">
+          <div className="about-card flippable" id="about-bio">
             <p className="bio-text">{about.musicbio}</p>
           </div>
       }

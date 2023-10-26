@@ -86,7 +86,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
-        <h3 className="link">{atAbout ? "RECENT PROJECTS" : "PROJECTS"}</h3> :
+        <h3 className="link flippable">{atAbout ? `RECENT ${music ? "MUSIC" : "CODE"} WORK` : `${music ? "MUSIC" : "CODE"} PROJECTS`}</h3> :
         {projectCards}
       </section>
       :

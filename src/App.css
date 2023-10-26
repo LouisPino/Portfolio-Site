@@ -389,6 +389,11 @@ h2 {
   animation: rotation .5s;
 }
 
+.flip {
+  /* animation: flip .5s ease-in-out; */
+  animation: flip .5s
+}
+
 @keyframes rotation {
   0% {
     rotate: 0px;
@@ -398,6 +403,8 @@ h2 {
     rotate: 359deg;
   }
 }
+
+
 
 
 @media screen and (max-width: 1000px) {

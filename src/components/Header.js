@@ -50,7 +50,17 @@ function Header({ music, setMusic }) {
           <Link to="/projects">
             <button className="nav-btn projects-btn"><p className="link nav-btn-text">PROJECTS</p></button>
           </Link>
-          <button className="nav-btn music-btn" onClick={() => setMusic((oldState) => !oldState)}><p className="link nav-btn-text">{music ? "CODE" : "MUSIC"}</p></button>
+          <button className="nav-btn music-btn" onClick={() => {
+            setMusic((oldState) => !oldState)
+            const flip = document.querySelectorAll(".flippable")
+            for (let el of flip) {
+              el.classList.add("flip")
+              setTimeout(() => {
+                el.classList.remove("flip")
+              }, 1000)
+            }
+
+          }}><p className="link nav-btn-text flippable">{music ? "CODE" : "MUSIC"}</p></button>
         </nav>
       </div>
       <div className="dropbtn" id="hamburger-div">
@@ -65,7 +75,6 @@ function Header({ music, setMusic }) {
           <p className="burger-link burger-link-text link" onClick={() => {
             setMusic((oldState) => !oldState)
             hideBurger()
-            console.log(dropbtnContentEl)
           }}
           >{music ? "CODE" : "MUSIC"}</p>
         </div>
