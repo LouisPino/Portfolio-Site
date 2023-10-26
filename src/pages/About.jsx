@@ -1,14 +1,15 @@
 import Welcome from "../components/Welcome"
-import RecentProjects from "../components/RecentProjects"
 import AboutMe from "../components/AboutMe"
-export default function About({scrollPosition}){
+import Projects from "../components/Projects"
 
-return(
-<>
-<Welcome message="" time={0}/>
-<AboutMe/>
-<RecentProjects scrollPosition={scrollPosition}/>
-</>
+export default function About({ scrollPosition, setScrollPosition }) {
 
-)
+    return (
+        <>
+            <Welcome message="" time={0} />
+            <AboutMe />
+            <Projects scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} />
+        </>
+
+    )
 }

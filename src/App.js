@@ -18,16 +18,16 @@ function App() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
+    const position = window.scrollY;
+    setScrollPosition(position);
   };
-  
+
   useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true });
-      
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
 
@@ -37,12 +37,12 @@ function App() {
     <div className="App">
       <Header />
       <div className="main">
-          <div className="bg-color"></div>
+        <div className="bg-color"></div>
         <Routes>
           <Route exact path="/" element={<Landing />} />
-          <Route exact path="/about" element={<About scrollPosition={scrollPosition}/>} />
-          <Route exact path="/projects" element={<Code scrollPosition={scrollPosition} setScrollPosition={setScrollPosition}/>} />
-          <Route  path="/*" element={<_404 />} />
+          <Route exact path="/about" element={<About scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} />} />
+          <Route exact path="/projects" element={<Code scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} />} />
+          <Route path="/*" element={<_404 />} />
         </Routes>
       </div>
       <Footer />
