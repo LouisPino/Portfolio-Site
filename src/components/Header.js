@@ -91,10 +91,6 @@ function Header({ music, setMusic }) {
             >{music ? "CODE" : "MUSIC"}</p>
           </div>}
       </div>
-
-
-
-
     </header >
   );
 }
