@@ -23,6 +23,20 @@ function Header({ music, setMusic }) {
     dropbtnContentEl.style.display = "none";
   }
 
+  function musicToggle() {
+
+    setMusic((oldState) => !oldState)
+    const flip = document.querySelectorAll(".flippable")
+    for (let el of flip) {
+      el.classList.add("flip")
+      setTimeout(() => {
+        el.classList.remove("flip")
+      }, 500)
+    }
+
+
+  }
+
 
   let progress = document.getElementById("progressbar");
   let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -50,17 +64,7 @@ function Header({ music, setMusic }) {
           <Link to="/projects">
             <button className="nav-btn projects-btn"><p className="link nav-btn-text">PROJECTS</p></button>
           </Link>
-          <button className="nav-btn music-btn" onClick={() => {
-            setMusic((oldState) => !oldState)
-            const flip = document.querySelectorAll(".flippable")
-            for (let el of flip) {
-              el.classList.add("flip")
-              setTimeout(() => {
-                el.classList.remove("flip")
-              }, 1000)
-            }
-
-          }}><p className="link nav-btn-text flippable">{music ? "CODE" : "MUSIC"}</p></button>
+          <button className="nav-btn music-btn" onClick={musicToggle}><p className="link nav-btn-text flippable">{music ? "CODE" : "MUSIC"}</p></button>
         </nav>
       </div>
       <div className="dropbtn" id="hamburger-div">
@@ -73,7 +77,7 @@ function Header({ music, setMusic }) {
             <p className="burger-link-text link">PROJECTS</p>
           </Link>
           <p className="burger-link burger-link-text link" onClick={() => {
-            setMusic((oldState) => !oldState)
+            musicToggle()
             hideBurger()
           }}
           >{music ? "CODE" : "MUSIC"}</p>
