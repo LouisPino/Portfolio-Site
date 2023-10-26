@@ -22,7 +22,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   useEffect(() => {
     setCount(0)
     setLimit(1)
-    console.log('hit')
+
   }, [music]);
 
   const atAbout = useLocation().pathname.slice(-5) === "about"
@@ -86,7 +86,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
-        <h3 className="link flippable">{atAbout ? `RECENT ${music ? "MUSIC" : "CODE"} WORK` : `${music ? "MUSIC" : "CODE"} PROJECTS`}</h3> :
+        <h3 className="link flippable">{atAbout ? `RECENT ${music ? "MUSICAL" : "CODE"} WORK` : `${music ? "MUSICAL" : "CODE"} PROJECTS`}</h3> :
         {projectCards}
       </section>
       :

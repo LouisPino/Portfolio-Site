@@ -26,6 +26,10 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    document.querySelector(".bg-color").style.animation = `${!music ? "bganimate1" : "bganimate2"} 30s linear infinite`
+  }, [music])
+
   return (
     <div className="App">
       <Header music={music} setMusic={setMusic} />
