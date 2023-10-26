@@ -1,21 +1,17 @@
-.projects-body {
-  margin: 0 auto;
-  margin-top: 160px;
-  position: relative;
-  width: 100%;
+.projects-page {
+  margin-top: 128px;
 }
 
-.recent-projects-body {
+.projects-body {
   margin: 0 auto;
   position: relative;
   width: 100%;
-  transform: translateY(500px);
-  transition: 500ms 1s;
 }
 
 .project-card {
   width: 75%;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-bottom: 32px;
   display: flex;
   background-color: aliceblue;
   border-radius: 8px;
@@ -75,7 +71,6 @@
   color: transparent;
   text-decoration: none;
   transition: 300ms;
-
 }
 
 .project-btn-text {
@@ -86,22 +81,12 @@
 .projects-body>h3 {
   text-align: center;
   font-size: 48px;
-}
-
-.recent-projects-body>h3 {
-  text-align: center;
-  font-size: 48px;
+  margin: 0;
 }
 
 .projects-body h1 {
   text-align: center;
 }
-
-.recent-projects-body h1 {
-  text-align: center;
-}
-
-
 
 .tools {
   font-style: italic;

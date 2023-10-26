@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import '../styles/projects.css'
 import { useLocation } from "react-router";
-function Projects({ scrollPosition, setScrollPosition }) {
+function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   const [projects, setProjects] = useState(null);
   const [limit, setLimit] = useState(1);
   const [count, setCount] = useState(0);
@@ -23,10 +23,23 @@ function Projects({ scrollPosition, setScrollPosition }) {
       if (atAbout && !project.recent) {
         return false
       } else {
-        return true
+        if (music) {
+          if (project.music) {
+            return true
+          } else {
+            return false
+          }
+        } else {
+          if (project.tech) {
+            return true
+          } else {
+            return false
+          }
+        }
       }
     }).map((project, idx) => (
-      <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
+      // <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
+      <div className="project-card" key={project.name} id={idx}>
         {setScrollPosition(1)}
         {idx % 2 === 0 && <img className="project-image" src={project.image} />}
         <div className="project-info">

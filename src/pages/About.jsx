@@ -8,7 +8,7 @@ export default function About({ scrollPosition, setScrollPosition, music, setMus
         <>
             <Welcome message="" time={0} />
             <AboutMe music={music} setMusic={setMusic} />
-            <Projects scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} />
+            <Projects scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} music={music} setMusic={setMusic} />
         </>
 
     )

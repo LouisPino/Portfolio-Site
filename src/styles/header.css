@@ -125,6 +125,7 @@ nav {
 /* Links inside the dropdown */
 .burger-link {
     display: block;
+    cursor: pointer;
 }
 
 .burger-link-text {

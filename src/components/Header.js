@@ -19,6 +19,7 @@ function Header({ music, setMusic }) {
   }, [])
 
   function hideBurger() {
+    dropbtnContentEl = document.querySelector(".dropdown-content");
     dropbtnContentEl.style.display = "none";
   }
 
@@ -52,7 +53,6 @@ function Header({ music, setMusic }) {
           <button className="nav-btn music-btn" onClick={() => setMusic((oldState) => !oldState)}><p className="link nav-btn-text">{music ? "CODE" : "MUSIC"}</p></button>
         </nav>
       </div>
-      {/* <img className="hamburger" src="/images/burger.png" /> */}
       <div className="dropbtn" id="hamburger-div">
         <img className="hamburger" src="/images/burger.png" />
         <div className="dropdown-content">
@@ -62,12 +62,12 @@ function Header({ music, setMusic }) {
           <Link to="/projects" className="burger-link" onClick={hideBurger}>
             <p className="burger-link-text link">PROJECTS</p>
           </Link>
-          <Link to="/projects" className="burger-link" onClick={() => {
-            setMusic(true)
+          <p className="burger-link burger-link-text link" onClick={() => {
+            setMusic((oldState) => !oldState)
             hideBurger()
-          }}>
-            <p className="burger-link-text link">MUSIC</p>
-          </Link>
+            console.log(dropbtnContentEl)
+          }}
+          >{music ? "CODE" : "MUSIC"}</p>
         </div>
       </div>
 

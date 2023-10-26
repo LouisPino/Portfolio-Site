@@ -32,9 +32,9 @@ function App() {
       <div className="main">
         <div className="bg-color"></div>
         <Routes>
-          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/" element={<Landing setMusic={setMusic} />} />
           <Route exact path="/about" element={<About scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} music={music} setMusic={setMusic} />} />
-          <Route exact path="/projects" element={<Projects scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} />} />
+          <Route exact path="/projects" element={<Projects scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} music={music} setMusic={setMusic} />} />
           <Route path="/*" element={<_404 />} />
         </Routes>
       </div>
