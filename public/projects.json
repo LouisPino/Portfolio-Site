@@ -57,7 +57,8 @@
     "tools": "MAX, Arduino, OBS, Hardware Hacking",
     "recent": true,
     "music": true,
-    "tech": true
+    "tech": true,
+    "category": "percussion, electronics, composition"
   },
   {
     "name": "Scenic Shenanigans",
@@ -81,7 +82,8 @@
     "tools": "MAX, Arduino, OBS, Hardware Hacking",
     "recent": false,
     "music": true,
-    "tech": true
+    "tech": true,
+    "category": "electronics"
   },
   {
     "name": "All At Once",
@@ -93,7 +95,8 @@
     "tools": "MAX, Arduino, OBS, Hardware Hacking",
     "recent": true,
     "music": true,
-    "tech": false
+    "tech": false,
+    "category": "composition, electronics, percussion"
   },
   {
     "name": "Here and There",
@@ -105,7 +108,8 @@
     "tools": "MAX, Arduino, OBS, Hardware Hacking",
     "recent": true,
     "music": true,
-    "tech": false
+    "tech": false,
+    "category": "percussion"
   },
   {
     "name": "Three Roses",
@@ -117,6 +121,20 @@
     "tools": "MAX, Arduino, OBS, Hardware Hacking",
     "recent": true,
     "music": true,
-    "tech": false
+    "tech": false,
+    "category": "electronics, composition"
+  },
+  {
+    "name": "Gymnopedia No. 1",
+    "live": "https://www.youtube.com/watch?v=XPEXcfnledc",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://f4.bcbits.com/img/a1678755874_16.jpg",
+    "description": "By Erik Satie",
+    "tools": "MAX, Arduino, OBS, Hardware Hacking",
+    "recent": true,
+    "music": true,
+    "tech": false,
+    "category": "arrangements, percussion"
   }
 ]

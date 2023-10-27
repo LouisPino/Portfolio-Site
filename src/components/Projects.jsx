@@ -3,6 +3,7 @@ import '../styles/projects.css'
 import { useLocation } from "react-router";
 function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   const [projects, setProjects] = useState(null);
+  const [musicChoice, setMusicChoice] = useState("percussion");
   const [limit, setLimit] = useState(1);
   const [count, setCount] = useState(0);
   const getProjectsData = async () => {
@@ -10,7 +11,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     const data = await response.json();
     setProjects(data);
   };
-
   useEffect(() => {
     getProjectsData();
     setScrollPosition(0)
@@ -21,8 +21,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   useEffect(() => {
     setCount(0)
     setLimit(1)
-
-  }, [music]);
+  }, [music, musicChoice]);
 
   const atAbout = useLocation().pathname.slice(-5) === "about"
 
@@ -32,10 +31,10 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
         return false
       } else {
         if (music) {
-          if (project.music) {
+          if (project.music && !atAbout && project.category.split(', ').indexOf(musicChoice) >= 0) {
             return true
-          } else {
-            return false
+          } else if (project.music && atAbout) {
+            return true
           }
         } else {
           if (project.tech) {
@@ -47,7 +46,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
       }
     }).map((project, idx) => (
       <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
-        {/* <div className="project-card" key={project.name} id={idx}> */}
         {setScrollPosition(1)}
         {idx % 2 === 0 && <img className="project-image" src={project.image} />}
         <div className="project-info">
@@ -85,7 +83,21 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
-        <h3 className="link flippable">{atAbout ? `RECENT ${music ? "MUSICAL" : "CODE"} WORK` : `${music ? "MUSICAL" : "CODE"} PROJECTS`}</h3> :
+        <h3 className="link flippable">{atAbout ? `RECENT ${music ? "MUSICAL" : "CODE"} WORK` : `${music ? "MUSICAL" : "CODE"} PROJECTS`}</h3>
+        {music && !atAbout && <div className="music-choices">
+          <h2 className="music-choice" onClick={() => setMusicChoice('percussion')}>
+            PERCUSSION
+          </h2>
+          <h2 className="music-choice" onClick={() => setMusicChoice('electronics')}>
+            ELECTRONICS
+          </h2>
+          <h2 className="music-choice" onClick={() => setMusicChoice('composition')}>
+            COMPOSITION
+          </h2>
+          <h2 className="music-choice" onClick={() => setMusicChoice('arrangements')}>
+            ARRANGEMENTS
+          </h2>
+        </div>}
         {projectCards}
       </section>
       :
