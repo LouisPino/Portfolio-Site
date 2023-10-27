@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import '../styles/projects.css'
 import { useLocation } from "react-router";
+
 function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   const [projects, setProjects] = useState(null);
   const [musicChoice, setMusicChoice] = useState("percussion");
@@ -21,9 +22,27 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   useEffect(() => {
     setCount(0)
     setLimit(1)
+    setTimeout(() => {
+      if (music) {
+        document.querySelector('.music-choices').style.transform = "translate(0)"
+      }
+    }, 200)
   }, [music, musicChoice]);
 
+  function glowChoice(e) {
+    const choiceEls = document.querySelectorAll(".music-choice")
+    for (let el of choiceEls) {
+      el.classList.remove('here')
+      el.classList.remove('selected-music-choice')
+    }
+    e.target.classList.add('here')
+    e.target.classList.add('selected-music-choice')
+  }
+
+
   const atAbout = useLocation().pathname.slice(-5) === "about"
+
+
 
   if (projects?.length) {
     const projectCards = projects.filter((project) => {
@@ -83,20 +102,28 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
-        <h3 className="link flippable">{atAbout ? `RECENT ${music ? "MUSICAL" : "CODE"} WORK` : `${music ? "MUSICAL" : "CODE"} PROJECTS`}</h3>
+        <h3 className="link flippable" id="project-comp-title">{atAbout ? `RECENT ${music ? "MUSIC" : "CODE"} PROJECTS` : `${music ? "MUSIC" : "CODE"} PROJECTS`}</h3>
         {music && !atAbout && <div className="music-choices">
-          <h2 className="music-choice" onClick={() => setMusicChoice('percussion')}>
-            PERCUSSION
-          </h2>
-          <h2 className="music-choice" onClick={() => setMusicChoice('electronics')}>
-            ELECTRONICS
-          </h2>
-          <h2 className="music-choice" onClick={() => setMusicChoice('composition')}>
-            COMPOSITION
-          </h2>
-          <h2 className="music-choice" onClick={() => setMusicChoice('arrangements')}>
-            ARRANGEMENTS
-          </h2>
+          <button className="music-choice-btn">
+            <h2 className={`music-choice link ${musicChoice === 'percussion' ? " here" : ""}`} onClick={(e) => { setMusicChoice('percussion'); }}>
+              PERCUSSION
+            </h2>
+          </button>
+          <button className="music-choice-btn">
+            <h2 className={`music-choice link ${musicChoice === 'electronics' ? " here" : ""}`} onClick={(e) => { setMusicChoice('electronics'); }}>
+              ELECTRONICS
+            </h2>
+          </button>
+          <button className="music-choice-btn">
+            <h2 className={`music-choice link ${musicChoice === 'composition' ? " here" : ""}`} onClick={(e) => { setMusicChoice('composition'); }}>
+              COMPOSITION
+            </h2>
+          </button>
+          <button className="music-choice-btn">
+            <h2 className={`music-choice link ${musicChoice === 'arrangements' ? " here" : ""}`} onClick={(e) => { setMusicChoice('arrangements'); }}>
+              ARRANGEMENTS
+            </h2>
+          </button>
         </div>}
         {projectCards}
       </section>
