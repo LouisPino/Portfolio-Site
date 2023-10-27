@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 import "../styles/header.css"
 import { useEffect, useState } from "react";
@@ -18,11 +18,6 @@ function Header({ music, setMusic }) {
     setBurgerDrop((prevBurgerDrop) => (!prevBurgerDrop))
   }
 
-  function hideBurger() {
-    dropbtnContentEl = document.querySelector(".dropdown-content");
-    dropbtnContentEl.style.display = "none";
-  }
-
   window.addEventListener('resize', handleResize)
   function handleResize() {
     if (window.innerWidth > 700 && burgerDrop === true) {
@@ -39,8 +34,6 @@ function Header({ music, setMusic }) {
         el.classList.remove("flip")
       }, 500)
     }
-
-
   }
 
 
@@ -76,20 +69,19 @@ function Header({ music, setMusic }) {
 
       <div className="dropbtn" id="hamburger-div">
         <img className="hamburger" src="/images/burger.png" />
-        {burgerDrop &&
-          <div className="dropdown-content">
-            <Link to="/about" className="burger-link" onClick={hideBurger}>
-              <p className="burger-link-text link">ABOUT</p>
-            </Link>
-            <Link to="/projects" className="burger-link" onClick={hideBurger}>
-              <p className="burger-link-text link">PROJECTS</p>
-            </Link>
-            <p className="burger-link burger-link-text link" onClick={() => {
-              musicToggle()
-              hideBurger()
-            }}
-            >{music ? "CODE" : "MUSIC"}</p>
-          </div>}
+        <div className={burgerDrop ? 'dropdown-visible dropdown-content' : 'dropdown-hidden dropdown-content'}>
+          <Link to="/about" className="burger-link" >
+            <p className="burger-link-text link" >ABOUT</p>
+          </Link>
+          <Link to="/projects" className="burger-link" >
+            <p className="burger-link-text link">PROJECTS</p>
+          </Link>
+          <p className="burger-link burger-link-text link" onClick={() => {
+            musicToggle()
+            toggleBurger()
+          }}
+          >{music ? "CODE" : "MUSIC"}</p>
+        </div>
       </div>
     </header >
   );
