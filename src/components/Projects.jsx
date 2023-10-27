@@ -19,28 +19,20 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     setLimit(1)
   }, []);
 
+  const atAbout = useLocation().pathname.slice(-5) === "about"
+
   useEffect(() => {
     setCount(0)
     setLimit(1)
     setTimeout(() => {
-      if (music) {
+      if (music && !atAbout) {
         document.querySelector('.music-choices').style.transform = "translate(0)"
       }
     }, 200)
   }, [music, musicChoice]);
 
-  function glowChoice(e) {
-    const choiceEls = document.querySelectorAll(".music-choice")
-    for (let el of choiceEls) {
-      el.classList.remove('here')
-      el.classList.remove('selected-music-choice')
-    }
-    e.target.classList.add('here')
-    e.target.classList.add('selected-music-choice')
-  }
 
 
-  const atAbout = useLocation().pathname.slice(-5) === "about"
 
 
 
