@@ -104,6 +104,7 @@ nav {
     width: 50px;
     overflow: hidden;
     animation: bganimate2 20s linear infinite;
+    outline: 2px solid gray;
 }
 
 .toggle-anim-bg {
@@ -115,7 +116,9 @@ nav {
 
 .toggle-anim-ball {
     position: absolute;
+    /* background: linear-gradient(45deg, #e8f59e, #bcc3ff, #ffafaf); */
     background: linear-gradient(45deg, #e8f59e, #bcc3ff, #ffafaf);
+    border: 1px solid gray;
     border-radius: 50%;
     width: 20px;
     height: 20px;
