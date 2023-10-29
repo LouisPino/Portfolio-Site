@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import '../styles/projects.css'
 import { useLocation } from "react-router";
+import ProjectCard from "./ProjectCard"
 
 function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   const [projects, setProjects] = useState(null);
@@ -32,13 +33,10 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   }, [music, musicChoice]);
 
 
-
-
-
-
   if (projects?.length) {
-    const projectCards = projects.filter((project) => {
-      if (atAbout && !project.recent) {
+    setScrollPosition(1)
+    let projectCards = projects.filter((project) => {
+      if (atAbout && !project.recent || project.feature) {
         return false
       } else {
         if (music) {
@@ -56,36 +54,23 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
         }
       }
     }).map((project, idx) => (
-      <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
-        {setScrollPosition(1)}
-        {idx % 2 === 0 ?
-          !project.embed && <img className="project-image" src={project.image} /> :
-          project.embed && <iframe className="project-image project-iframe" src={`${project.embedLink}`} frameborder="0"></iframe>}
-        <div className="project-info">
-          <h1 className="here project-title"> {project.name}</h1>
-          <p>{project.description}</p>
-          <div className="project-btns">
-            {project.git && <a href={project.git} target="_blank">
-              <button className="project-btn"><p className="project-btn-text">Github</p></button>
-            </a>}
-            {!project.embed && <a href={project.live} target="_blank">
-              <button className="project-btn"><p className="project-btn-text">{project.liveTitle}</p></button>
-            </a>}
-          </div>
-          <p className="tools">{project.tools}</p>
-        </div>
-        {
-          idx % 2 === 1 ?
-            !project.embed && <img className="project-image" src={project.image} /> :
-            project.embed && <iframe className="project-image project-iframe" src={`${project.embedLink}`} frameborder="0"></iframe>
-        }
-      </div >
+      <ProjectCard project={project} idx={idx} />
     ))
+
+    const featured = projects.filter((project) => (project.feature ? true : false))[0]
+    if (music && atAbout) {
+      projectCards.unshift(<ProjectCard project={featured} idx={1000} />)
+    } else if (music && musicChoice === 'electronics') {
+      projectCards.unshift(<ProjectCard project={featured} idx={1000} />)
+    } else if (music && featured.category.split(', ').indexOf(musicChoice) >= 0) {
+      projectCards.push(<ProjectCard project={featured} idx={1000} />)
+    }
 
     function getScrollFraction() {
       if (count < projectCards.length) {
         if (scrollPosition >= limit) {
-          const currentProjectEl = document.getElementById(projectCards[count].props.id)
+          console.log(document.querySelectorAll(".project-card")[count])
+          const currentProjectEl = document.querySelectorAll(".project-card")[count]
           if (currentProjectEl) {
             currentProjectEl.style.transform = "translateX(0px)"
           }
@@ -95,8 +80,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
       }
     }
     getScrollFraction()
-
-
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
@@ -129,8 +112,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
       :
       <h1 className="loading-h1">Loading...</h1>;
   }
-
-
 }
 
 export default Projects;
