@@ -15,6 +15,7 @@
 .project-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   width: 75%;
   margin: 0 auto;
@@ -136,6 +137,15 @@
   background-color: white;
 }
 
+.selected-choice::after {
+  content: " ";
+  height: 4px;
+  width: 0px;
+  text-align: center;
+  background-color: white;
+  width: 80%;
+}
+
 .music-choice-btn {
   border: none;
   border-radius: 16px;
@@ -166,6 +176,10 @@
 
   .project-info {
     order: 2;
+  }
+
+  .project-iframe {
+    min-height: 300px;
   }
 
 }

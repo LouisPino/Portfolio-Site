@@ -59,11 +59,11 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
 
     const featured = projects.filter((project) => (project.feature ? true : false))[0]
     if (music && atAbout) {
-      projectCards.unshift(<ProjectCard project={featured} idx={1000} />)
+      projectCards.unshift(<ProjectCard project={featured} idx={11} />)
     } else if (music && musicChoice === 'electronics') {
-      projectCards.unshift(<ProjectCard project={featured} idx={1000} />)
+      projectCards.unshift(<ProjectCard project={featured} idx={101} />)
     } else if (music && featured.category.split(', ').indexOf(musicChoice) >= 0) {
-      projectCards.push(<ProjectCard project={featured} idx={1000} />)
+      projectCards.push(<ProjectCard project={featured} idx={projectCards.length % 2 !== 0 ? 101 : 102} />)
     }
 
     function getScrollFraction() {
@@ -86,23 +86,23 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
         <h3 className="link flippable" id="project-comp-title">{atAbout ? `RECENT ${music ? "MUSIC" : "CODE"} PROJECTS` : `${music ? "MUSIC" : "CODE"} PROJECTS`}</h3>
         {music && !atAbout && <div className="music-choices">
           <button className="music-choice-btn">
-            <h2 className={`music-choice link ${musicChoice === 'percussion' ? " here" : ""}`} onClick={(e) => { setMusicChoice('percussion'); }}>
+            <h2 className={`music-choice link ${musicChoice === 'percussion' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('percussion'); }}>
               PERCUSSION
             </h2>
           </button>
 
           <button className="music-choice-btn">
-            <h2 className={`music-choice link ${musicChoice === 'electronics' ? " here" : ""}`} onClick={(e) => { setMusicChoice('electronics'); }}>
+            <h2 className={`music-choice link ${musicChoice === 'electronics' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('electronics'); }}>
               ELECTRONICS
             </h2>
           </button>
           <button className="music-choice-btn">
-            <h2 className={`music-choice link ${musicChoice === 'composition' ? " here" : ""}`} onClick={(e) => { setMusicChoice('composition'); }}>
+            <h2 className={`music-choice link ${musicChoice === 'composition' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('composition'); }}>
               COMPOSITION
             </h2>
           </button>
           <button className="music-choice-btn">
-            <h2 className={`music-choice link ${musicChoice === 'arrangements' ? " here" : ""}`} onClick={(e) => { setMusicChoice('arrangements'); }}>
+            <h2 className={`music-choice link ${musicChoice === 'arrangements' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('arrangements'); }}>
               ARRANGEMENTS
             </h2>
           </button>
