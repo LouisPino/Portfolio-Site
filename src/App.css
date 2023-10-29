@@ -4,6 +4,7 @@
 * {
   /* border: 1px solid red; */
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .white {
@@ -49,10 +50,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* font-family: 'Libre Baskerville', serif; */
   font-family: "Poppins", serif;
   position: relative;
-  /* background-image: url("../public/images/flowerback.webp"); */
 }
 
 .bg-color {
@@ -61,15 +60,6 @@ body {
   background: linear-gradient(#d60000, #02ffb3);
   animation: bganimate1 30s linear infinite;
   opacity: 0.5;
-  position: absolute;
-}
-
-footer {
-  color: white;
-  position: relative;
-}
-
-header {
   position: absolute;
 }
 
@@ -127,10 +117,9 @@ header {
 .chorale {
   position: absolute;
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
   object-fit: cover;
   z-index: 1;
-  top: -56px;
 }
 
 .mobile-landing-bg {
