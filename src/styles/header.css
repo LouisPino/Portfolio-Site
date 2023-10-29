@@ -110,7 +110,7 @@ nav {
     position: absolute;
     height: 100%;
     transition: 300ms;
-    background: linear-gradient(45deg, #e8f59e, #bcc3ff, #ffafaf);
+    animation: bganimate1 20s linear infinite;
 }
 
 .toggle-anim-ball {

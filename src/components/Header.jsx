@@ -9,7 +9,6 @@ function Header({ music, setMusic }) {
   useEffect(() => {
     const hamburgerEl = document.querySelector(".dropbtn");
     dropbtnContentEl = document.querySelector(".dropdown-content");
-    // const toggleAnimBallEl = document.getElementById("toggle-anim-ball");
     hamburgerEl.addEventListener("mouseover", () => { setBurgerDrop(true) })
     hamburgerEl.addEventListener("click", () => { toggleBurger() })
     hamburgerEl.addEventListener("mouseout", () => { setBurgerDrop(false) })
@@ -67,7 +66,7 @@ function Header({ music, setMusic }) {
           <div className="music-btn-ctr">
             <button className="nav-btn music-btn" onClick={musicToggle}><p className="link nav-btn-text flippable">{music ? "CODE" : "MUSIC"}</p></button>
             <div className="toggle-anim" onClick={musicToggle}>
-              <div className="toggle-anim-bg" style={{ width: `${!music ? "10px" : "calc(100% - 10px)"}`, animation: `${music ? "bganimate1" : "bganimate2"} 30s linear infinite` }}></div>
+              <div className="toggle-anim-bg" style={{ width: `${!music ? "10px" : "calc(100% - 10px)"}` }}></div>
               <div className={`toggle-anim-ball`} style={{ left: `${!music ? "0" : "calc(100% - 20px)"}` }}></div>
             </div>
           </div>

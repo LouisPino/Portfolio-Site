@@ -22,13 +22,13 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   const atAbout = useLocation().pathname.slice(-5) === "about"
 
   useEffect(() => {
-    setCount(0)
-    setLimit(1)
     setTimeout(() => {
       if (music && !atAbout) {
         document.querySelector('.music-choices').style.transform = "translate(0)"
       }
     }, 200)
+    setCount(0)
+    setLimit(1)
   }, [music, musicChoice]);
 
 
