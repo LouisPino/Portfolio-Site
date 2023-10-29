@@ -58,10 +58,20 @@ function Header({ music, setMusic }) {
 
         <nav>
           <Link to="/about">
-            <button className="nav-btn about-btn"><p className={`link nav-btn-text ${location === "ABOUT" ? "here" : ""}`}>ABOUT</p></button>
+            <button className="nav-btn about-btn" style={location === "ABOUT" ? {
+              color: "linear-gradient(90deg, red, orange, yellow, green, blue, purple)",
+              animation: "animate 15s linear infinite"
+            } :
+              {}
+            }><p className={`link nav-btn-text`}>ABOUT</p></button>
           </Link>
           <Link to="/projects">
-            <button className="nav-btn projects-btn"><p className={`link nav-btn-text ${location === "PROJECTS" ? "here" : ""}`}>PROJECTS</p></button>
+            <button className="nav-btn projects-btn" style={location === "PROJECTS" ? {
+              color: "linear-gradient(90deg, red, orange, yellow, green, blue, purple)",
+              animation: "animate 15s linear infinite"
+            } :
+              {}
+            }><p className={`link nav-btn-text`}>PROJECTS</p></button>
           </Link>
           <div className="music-btn-ctr">
             <button className="nav-btn music-btn" onClick={musicToggle}><p className="link nav-btn-text flippable">{music ? "CODE" : "MUSIC"}</p></button>
