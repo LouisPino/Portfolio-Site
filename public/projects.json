@@ -9,7 +9,8 @@
     "tools": "Python, Django, React, PostgreSQL, JavaScript, HTML, CSS, Materialize, Heroku, Howler.js, AWS S3, Open Opus API",
     "recent": true,
     "music": false,
-    "tech": true
+    "tech": true,
+    "embed": false
   },
   {
     "name": "Bat Buster",
@@ -21,7 +22,8 @@
     "tools": "JavaScript, HTML, CSS, Bootstrap",
     "recent": true,
     "music": false,
-    "tech": true
+    "tech": true,
+    "embed": false
   },
   {
     "name": "Kindr",
@@ -33,7 +35,8 @@
     "tools": "React, MongoDB/Mongoose, Express, Node.js, HTML, CSS, Auth0, OpenAI API",
     "recent": true,
     "music": false,
-    "tech": true
+    "tech": true,
+    "embed": false
   },
   {
     "name": "Jaz Tsui Portfolio",
@@ -45,7 +48,8 @@
     "tools": "JavaScript, HTML, CSS",
     "recent": false,
     "music": false,
-    "tech": true
+    "tech": true,
+    "embed": false
   },
   {
     "name": "Elemental Suite",
@@ -58,7 +62,9 @@
     "recent": true,
     "music": true,
     "tech": true,
-    "category": "percussion, electronics, composition"
+    "category": "percussion, electronics, composition",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/83XIyVW5MeA?si=ItKypZ9trzF1RHhR"
   },
   {
     "name": "Scenic Shenanigans",
@@ -70,7 +76,8 @@
     "tools": "Node.js, MongoDB/Mongoose, Express, HTML, CSS, OAuth2, OpenAI API",
     "recent": false,
     "music": false,
-    "tech": true
+    "tech": true,
+    "embed": false
   },
   {
     "name": "Where am I?",
@@ -83,7 +90,9 @@
     "recent": false,
     "music": true,
     "tech": true,
-    "category": "electronics"
+    "category": "electronics",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/_e0XIVPQYJ0?si=WoTMEAxEr-zYFBaK"
   },
   {
     "name": "All At Once",
@@ -96,7 +105,9 @@
     "recent": true,
     "music": true,
     "tech": false,
-    "category": "composition, electronics, percussion"
+    "category": "composition, electronics, percussion",
+    "embed": true,
+    "embedLink": "https://bandcamp.com/EmbeddedPlayer/album=3768409062/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
   },
   {
     "name": "Here and There",
@@ -109,7 +120,9 @@
     "recent": true,
     "music": true,
     "tech": false,
-    "category": "percussion"
+    "category": "percussion",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/6r3VmnepRQY?si=MkHDyw33LV3E7uze"
   },
   {
     "name": "Three Roses",
@@ -122,7 +135,9 @@
     "recent": true,
     "music": true,
     "tech": false,
-    "category": "electronics, composition"
+    "category": "electronics, composition",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/NPQ4NWxeiL4?si=INlVdAnkaI1Oc8kg"
   },
   {
     "name": "Gymnopedie No. 1",
@@ -135,6 +150,8 @@
     "recent": true,
     "music": true,
     "tech": false,
-    "category": "arrangements, percussion"
+    "category": "arrangements, percussion",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/XPEXcfnledc?si=i28IZKP2OeUBAXeC"
   }
 ]

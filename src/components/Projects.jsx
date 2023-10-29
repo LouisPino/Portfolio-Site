@@ -58,7 +58,9 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     }).map((project, idx) => (
       <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 ? "translateX(100vw)" : idx % 2 === 0 ? 'translateX(100vw)' : 'translateX(-100vw)' }}>
         {setScrollPosition(1)}
-        {idx % 2 === 0 && <img className="project-image" src={project.image} />}
+        {idx % 2 === 0 ?
+          !project.embed && <img className="project-image" src={project.image} /> :
+          project.embed && <iframe className="project-image project-iframe" src={`${project.embedLink}`} frameborder="0"></iframe>}
         <div className="project-info">
           <h1 className="here project-title"> {project.name}</h1>
           <p>{project.description}</p>
@@ -66,14 +68,18 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
             {project.git && <a href={project.git} target="_blank">
               <button className="project-btn"><p className="project-btn-text">Github</p></button>
             </a>}
-            <a href={project.live} target="_blank">
+            {!project.embed && <a href={project.live} target="_blank">
               <button className="project-btn"><p className="project-btn-text">{project.liveTitle}</p></button>
-            </a>
+            </a>}
           </div>
           <p className="tools">{project.tools}</p>
         </div>
-        {idx % 2 === 1 && <img className="project-image" src={project.image} />}
-      </div>
+        {
+          idx % 2 === 1 ?
+            !project.embed && <img className="project-image" src={project.image} /> :
+            project.embed && <iframe className="project-image project-iframe" src={`${project.embedLink}`} frameborder="0"></iframe>
+        }
+      </div >
     ))
 
     function getScrollFraction() {
@@ -101,6 +107,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
               PERCUSSION
             </h2>
           </button>
+
           <button className="music-choice-btn">
             <h2 className={`music-choice link ${musicChoice === 'electronics' ? " here" : ""}`} onClick={(e) => { setMusicChoice('electronics'); }}>
               ELECTRONICS
