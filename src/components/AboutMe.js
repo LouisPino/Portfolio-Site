@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Skills from "../components/Skills";
 import { useState, useEffect } from "react";
 function AboutMe({ music, setMusic }) {
