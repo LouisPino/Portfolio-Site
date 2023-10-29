@@ -90,8 +90,39 @@ nav {
     margin: 30px auto;
 }
 
-@media screen and (max-width: 1000px) {
+.music-btn-ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.toggle-anim {
+    border-radius: 10px;
+    height: 20px;
+    position: relative;
+    margin-top: 8px;
+    width: 50px;
+    overflow: hidden;
+    animation: bganimate2 20s linear infinite;
+}
+
+.toggle-anim-bg {
+    position: absolute;
+    height: 100%;
+    transition: 300ms;
+    background: linear-gradient(45deg, #e8f59e, #bcc3ff, #ffafaf);
+}
+
+.toggle-anim-ball {
+    position: absolute;
+    background: linear-gradient(45deg, #e8f59e, #bcc3ff, #ffafaf);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: 300ms;
+}
+
+@media screen and (max-width: 1000px) {
     .hamburger {
         display: block;
     }

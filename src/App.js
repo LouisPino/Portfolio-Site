@@ -26,15 +26,12 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-    document.querySelector(".bg-color").style.animation = `${!music ? "bganimate1" : "bganimate2"} 30s linear infinite`
-  }, [music])
 
   return (
     <div className="App">
       <Header music={music} setMusic={setMusic} />
       <div className="main">
-        <div className="bg-color"></div>
+        <div className="bg-color" style={{ animation: `${!music ? "bganimate1" : "bganimate2"} 30s linear infinite` }}></div>
         <Routes>
           <Route exact path="/" element={<Landing setMusic={setMusic} />} />
           <Route exact path="/about" element={<About scrollPosition={scrollPosition} setScrollPosition={setScrollPosition} music={music} setMusic={setMusic} />} />
