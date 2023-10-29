@@ -1,5 +1,4 @@
-import { Link, } from "react-router-dom";
-
+import { Link, useLocation, } from "react-router-dom";
 import "../styles/header.css"
 import { useEffect, useState } from "react";
 
@@ -36,6 +35,7 @@ function Header({ music, setMusic }) {
     }
   }
 
+  const location = useLocation().pathname.split('/')[1].toUpperCase()
 
   let progress = document.getElementById("progressbar");
   let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -58,10 +58,10 @@ function Header({ music, setMusic }) {
 
         <nav>
           <Link to="/about">
-            <button className="nav-btn about-btn"><p className="link nav-btn-text">ABOUT</p></button>
+            <button className="nav-btn about-btn"><p className={`link nav-btn-text ${location === "ABOUT" ? "here" : ""}`}>ABOUT</p></button>
           </Link>
           <Link to="/projects">
-            <button className="nav-btn projects-btn"><p className="link nav-btn-text">PROJECTS</p></button>
+            <button className="nav-btn projects-btn"><p className={`link nav-btn-text ${location === "PROJECTS" ? "here" : ""}`}>PROJECTS</p></button>
           </Link>
           <div className="music-btn-ctr">
             <button className="nav-btn music-btn" onClick={musicToggle}><p className="link nav-btn-text flippable">{music ? "CODE" : "MUSIC"}</p></button>

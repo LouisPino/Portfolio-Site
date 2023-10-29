@@ -24,7 +24,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
 
   useEffect(() => {
     setTimeout(() => {
-      if (music && !atAbout) {
+      if (document.querySelector('.music-choices')) {
         document.querySelector('.music-choices').style.transform = "translate(0)"
       }
     }, 200)
