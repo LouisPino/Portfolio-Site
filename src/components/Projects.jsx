@@ -20,6 +20,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     setLimit(1)
   }, []);
 
+
   const atAbout = useLocation().pathname.slice(-5) === "about"
 
   useEffect(() => {
@@ -40,7 +41,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
         return false
       } else {
         if (music) {
-          if (project.music && !atAbout && project.category.split(', ').indexOf(musicChoice) >= 0) {
+          if (project.music && !atAbout && project.category.includes(musicChoice)) {
             return true
           } else if (project.music && atAbout) {
             return true
@@ -64,21 +65,23 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
       projectCards.unshift(<ProjectCard project={featured} idx={101} />)
     } else if (music && featured.category.split(', ').indexOf(musicChoice) >= 0) {
       projectCards.push(<ProjectCard project={featured} idx={projectCards.length % 2 !== 0 ? 101 : 102} />)
+    } else if (!music && featured.tech) {
+      projectCards.push(<ProjectCard project={featured} idx={projectCards.length % 2 !== 0 ? 101 : 102} />)
     }
 
     function getScrollFraction() {
       if (count < projectCards.length) {
         if (scrollPosition >= limit) {
-          console.log(document.querySelectorAll(".project-card")[count])
           const currentProjectEl = document.querySelectorAll(".project-card")[count]
           if (currentProjectEl) {
             currentProjectEl.style.transform = "translateX(0px)"
           }
-          setLimit(currentProjectEl.getBoundingClientRect().top + (count * 500))
+          setLimit(currentProjectEl.getBoundingClientRect().top + scrollPosition)
           setCount(count + 1)
         }
       }
     }
+
     getScrollFraction()
     return projects ?
       <section className="projects-body">
