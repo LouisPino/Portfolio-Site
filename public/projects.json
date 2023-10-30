@@ -46,7 +46,7 @@
     "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1697819874/pvdkdbwca6vksvgyjrgn.jpg",
     "description": "This website serves as a hub for documentation of the works by Toronto based multimedia artist Jasmine Tsui. Pared down full screen wireframes were designed by Jasmine and provided to me in order to create the website. We collaborated on the design and implementation over two months, leading to this final product. A refactor of the site into a React based SPA is currently in progress",
     "tools": "JavaScript, HTML, CSS",
-    "recent": false,
+    "recent": true,
     "music": false,
     "tech": true,
     "embed": false
@@ -59,7 +59,7 @@
     "image": "https://github.com/MNieginski/Seaside_Shenanigans_Squad/blob/main/Screenshot.png?raw=true",
     "description": "Scenic Shenanigans is a travel planner and journal. Users can add each other to various trips to plan activities and share photos with each other.",
     "tools": "Node.js, MongoDB/Mongoose, Express, HTML, CSS, OAuth2, OpenAI API",
-    "recent": false,
+    "recent": true,
     "music": false,
     "tech": true,
     "embed": false

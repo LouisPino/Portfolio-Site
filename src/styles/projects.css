@@ -37,6 +37,13 @@
 
 .project-iframe {
   min-width: 50%;
+  min-height: 400px;
+  padding: 10px;
+}
+
+.bandcamp-iframe {
+  max-width: 350px;
+  min-width: 350px;
 }
 
 .project-info {
@@ -168,7 +175,8 @@
     margin: 0;
   }
 
-  .project-image {
+  .project-image,
+  .project-iframe {
     margin: 15px auto;
     margin-top: 100px;
     order: 1;
@@ -180,7 +188,13 @@
 
   .project-iframe {
     min-height: 300px;
+    width: 90%;
   }
+
+  .bandcamp-iframe {
+    min-height: 350px;
+  }
+
 
 }
 
@@ -199,7 +213,8 @@
     text-align: justify;
   }
 
-  .project-image {
+  .project-image,
+  .project-iframe {
     margin: 15px auto;
     margin-top: 150px;
   }
