@@ -506,6 +506,8 @@ h2 {
   z-index: 100;
   background: linear-gradient(to top, #008aff, #00ffe7);
   animation: animate 5s linear infinite;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 #progressbar:before {
