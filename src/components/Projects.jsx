@@ -71,7 +71,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
 
     function getScrollFraction() {
       if (count < projectCards.length) {
-        if (scrollPosition >= 450 && scrollPosition >= limit - 450) {
+        if (scrollPosition >= 400 && scrollPosition >= limit - 400) {
           const currentProjectEl = document.querySelectorAll(".project-card")[count]
           if (currentProjectEl) {
             currentProjectEl.style.transform = "translateX(0px)"
