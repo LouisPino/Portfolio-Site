@@ -71,7 +71,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
 
     function getScrollFraction() {
       if (count < projectCards.length) {
-        if (scrollPosition >= limit) {
+        if (scrollPosition >= 450 && scrollPosition >= limit - 450) {
           const currentProjectEl = document.querySelectorAll(".project-card")[count]
           if (currentProjectEl) {
             currentProjectEl.style.transform = "translateX(0px)"
@@ -83,6 +83,7 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     }
 
     getScrollFraction()
+
     return projects ?
       <section className="projects-body">
         <div className="card-color"></div>
