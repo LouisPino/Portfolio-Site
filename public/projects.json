@@ -40,9 +40,9 @@
   },
   {
     "name": "Jaz Tsui Portfolio",
-    "live": "https://louispino.github.io/JazWebsite/",
+    "live": "https://jaztsui.netlify.app/",
     "liveTitle": "Visit Site",
-    "git": "https://github.com/LouisPino/JazWebsite",
+    "git": "https://github.com/LouisPino/jaz-react-portoflio",
     "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1697819874/pvdkdbwca6vksvgyjrgn.jpg",
     "description": "This website serves as a hub for documentation of the works by Toronto based multimedia artist Jasmine Tsui. Pared down full screen wireframes were designed by Jasmine and provided to me in order to create the website. We collaborated on the design and implementation over two months, leading to this final product. A refactor of the site into a React based SPA is currently in progress",
     "tools": "JavaScript, HTML, CSS",
