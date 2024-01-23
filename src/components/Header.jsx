@@ -63,7 +63,7 @@ function Header({ music, setMusic }) {
             </button>
           </Link>
           <Link to="/projects">
-            <button className="nav-btn about-btn">
+            <button className="nav-btn projects-btn">
               <p className={location === "PROJECTS" ? `link nav-btn-text selected-btn` : `link nav-btn-text `}>PROJECTS</p>
             </button>
           </Link>
