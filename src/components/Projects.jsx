@@ -6,8 +6,6 @@ import ProjectCard from "./ProjectCard"
 function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   const [projects, setProjects] = useState(null);
   const [musicChoice, setMusicChoice] = useState("percussion");
-  const [limit, setLimit] = useState(1);
-  const [count, setCount] = useState(0);
   const getProjectsData = async () => {
     const response = await fetch("./projects.json");
     const data = await response.json();
@@ -15,9 +13,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
   };
   useEffect(() => {
     getProjectsData();
-    setScrollPosition(0)
-    setCount(0)
-    setLimit(1)
   }, []);
 
 
@@ -29,13 +24,10 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
         document.querySelector('.music-choices').style.transform = "translate(0)"
       }
     }, 200)
-    setCount(0)
-    setLimit(1)
   }, [music, musicChoice]);
 
 
   if (projects?.length) {
-    setScrollPosition(1)
     let projectCards = projects.filter((project) => {
       if (atAbout && !project.recent || project.feature) {
         return false
@@ -68,21 +60,6 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
     } else if (!music && featured.tech) {
       projectCards.push(<ProjectCard project={featured} idx={projectCards.length % 2 !== 0 ? 101 : 102} />)
     }
-
-    function getScrollFraction() {
-      if (count < projectCards.length) {
-        if (scrollPosition >= 400 && scrollPosition >= limit - 400) {
-          const currentProjectEl = document.querySelectorAll(".project-card")[count]
-          if (currentProjectEl) {
-            currentProjectEl.style.transform = "translateX(0px)"
-          }
-          setLimit(currentProjectEl.getBoundingClientRect().top + scrollPosition)
-          setCount(count + 1)
-        }
-      }
-    }
-
-    getScrollFraction()
 
     return projects ?
       <section className="projects-body">

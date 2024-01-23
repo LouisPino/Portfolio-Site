@@ -3,7 +3,7 @@ import '../styles/projects.css'
 
 export default function ProjectCard({ project, idx }) {
 
-    return <div className="project-card" key={project.name} id={idx} style={{ transform: idx === 0 || idx === 11 ? "translateX(0px)" : idx % 2 === 0 ? 'translateX(110vw)' : 'translateX(-110vw)' }}>
+    return <div className="project-card" key={project.name} id={idx}>
         {idx % 2 === 0 ?
             !project.embed && <img className="project-image" src={project.image} /> :
             project.embed && <iframe width="560" height="315" className={`project-iframe ${project.embedLink.includes('bandcamp') ? "bandcamp-iframe" : ""}`} src={`${project.embedLink}`} frameBorder="0"></iframe>
