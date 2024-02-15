@@ -54,6 +54,11 @@
   padding: 50px;
 }
 
+.project-description {
+  white-space: pre-line;
+  text-align: justify
+}
+
 .project-info>h1 {
   font-size: 3rem;
 

@@ -10,7 +10,7 @@ export default function ProjectCard({ project, idx }) {
         }
         <div className="project-info">
             <h1 className="here project-title"> {project.name}</h1>
-            <p>{project.description}</p>
+            <p className="project-description">{project.description}</p>
             <div className="project-btns">
                 {project.git && <a href={project.git} target="_blank">
                     <button className="project-btn"><p className="project-btn-text">Github</p></button>
