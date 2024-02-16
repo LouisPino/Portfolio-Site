@@ -133,7 +133,7 @@
     "tech": true,
     "category": "percussion, electronics, composition",
     "embed": true,
-    "embedLink": "https://www.youtube.com/embed/83XIyVW5MeA?si=ItKypZ9trzF1RHhR",
+    "embedLink": "https://www.youtube.com/embed/83XIyVW5MeA",
     "feature": true
   },
   {
@@ -148,7 +148,8 @@
     "music": true,
     "tech": false,
     "category": "percussion",
-    "embed": false
+    "embedLink": "https://www.youtube.com/embed/D6-wE9qApBE",
+    "embed": true
   },
   {
     "name": "0 Damage Any % Reverse Glitch Speed Run",
@@ -162,7 +163,8 @@
     "music": true,
     "tech": false,
     "category": "percussion, electronics, composition",
-    "embed": false
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/qOQ3z_GgknQ"
   },
   {
     "name": "Where am I?",
