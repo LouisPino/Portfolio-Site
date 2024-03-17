@@ -121,6 +121,21 @@
     "embedLink": "https://bandcamp.com/EmbeddedPlayer/album=3768409062/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
   },
   {
+    "name": "Omelas",
+    "live": "https://www.youtube.com/watch?v=d5uT0jQ4Wc4",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1710685782/Screenshot_2024-03-17_102902_b1gtx6.png",
+    "description": "Omelas (2020) for vibraphone and voice\n \nPerformed by Joyce To",
+    "tools": "",
+    "recent": false,
+    "music": true,
+    "tech": false,
+    "category": "composition",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/d5uT0jQ4Wc4"
+  },
+  {
     "name": "Elemental Suite",
     "live": "https://www.youtube.com/watch?v=83XIyVW5MeA",
     "liveTitle": "Watch Video",
