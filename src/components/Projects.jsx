@@ -100,6 +100,12 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
             </button>
 
             <button className="music-choice-btn">
+              <h2 className={`music-choice link ${musicChoice === 'portfolios' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('portfolios'); }}>
+                PORTFOLIOS
+              </h2>
+            </button>
+
+            <button className="music-choice-btn">
               <h2 className={`music-choice link ${musicChoice === 'videos' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('videos'); }}>
                 VIDEOS
               </h2>
