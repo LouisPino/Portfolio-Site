@@ -8,10 +8,12 @@ function AboutMe({ music, setMusic }) {
     const data = await response.json();
     setAbout(data);
   };
+let splitBio = []
 
   useEffect(() => {
     getAboutData();
   }, []);
+
 
   useEffect(() => {
     const gifEl = document.querySelector(".gif");
@@ -20,11 +22,13 @@ function AboutMe({ music, setMusic }) {
       setTimeout(() => {
         gifEl.style.transform = "translateX(0px)"
         aboutEl.style.transform = "translateX(0px)"
-      }
-        , 10)
+      }, 10)
     }
   }, [about]);
 
+if (about){
+  splitBio = about.musicbio.split("\n").map((line)=><p>{line}</p>)
+}
   const loaded = () => (
     <div className="about-main">
       <div className="gif-ctr">
@@ -38,9 +42,9 @@ function AboutMe({ music, setMusic }) {
             <p className="bio-text">{about.bio}</p>
             <Skills />
           </div>
-          :
+          : 
           <div className="about-card flippable" id="about-bio">
-            <p className="bio-text">{about.musicbio}</p>
+            <p className="bio-text">{splitBio}</p>
           </div>
       }
     </div>
