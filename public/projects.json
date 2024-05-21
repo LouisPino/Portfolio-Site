@@ -100,12 +100,12 @@
     "category": "projects"
   },
   {
-    "name": "Jaz Tsui Portfolio",
-    "live": "https://jaztsui.netlify.app/",
+    "name": "Duo Cichorium",
+    "live": "https://duocichorium.com/",
     "liveTitle": "Visit Site",
-    "git": "https://github.com/LouisPino/jaz-react-portoflio",
-    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1697819874/pvdkdbwca6vksvgyjrgn.jpg",
-    "description": "This website serves as a hub for documentation of the works by Toronto based multimedia artist Jasmine Tsui. Pared down full screen wireframes were designed by Jasmine and provided to me in order to create the website. We collaborated on the design and implementation over two months, leading to this final product. A refactor of the site into a React based SPA is currently in progress",
+    "git": "https://github.com/LouisPino/duo-cichorium",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1710944356/CIcLogo_be3lpw.jpg",
+    "description": "Portfolio for Toronto based multimedia ensemble Duo Cichorium",
     "tools": "JavaScript, HTML, CSS, React",
     "recent": false,
     "music": false,
@@ -114,12 +114,12 @@
     "category": "portfolios"
   },
   {
-    "name": "Duo Cichorium",
-    "live": "https://duocichorium.netlify.app/",
+    "name": "Jaz Tsui Portfolio",
+    "live": "https://jaztsui.netlify.app/",
     "liveTitle": "Visit Site",
-    "git": "https://github.com/LouisPino/duo-cichorium",
-    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1710944356/CIcLogo_be3lpw.jpg",
-    "description": "Portfolio for Toronto based multimedia ensemble Duo Cichorium",
+    "git": "https://github.com/LouisPino/jaz-react-portoflio",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1697819874/pvdkdbwca6vksvgyjrgn.jpg",
+    "description": "This website serves as a hub for documentation of the works by Toronto based multimedia artist Jasmine Tsui. Pared down full screen wireframes were designed by Jasmine and provided to me in order to create the website. We collaborated on the design and implementation over two months, leading to this final product. A refactor of the site into a React based SPA is currently in progress",
     "tools": "JavaScript, HTML, CSS, React",
     "recent": false,
     "music": false,
@@ -200,6 +200,22 @@
     "embed": true,
     "embedLink": "https://www.youtube.com/embed/d5uT0jQ4Wc4",
     "attachments": "score"
+  },
+  {
+    "name": "aproximations",
+    "live": "https://www.youtube.com/watch?v=u6dUdKZiKRI",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1710685782/Screenshot_2024-03-17_102902_b1gtx6.png",
+    "description": "approximations by Molly Jones for accordion, percussion, and neural networks  is a collection of five short movements featuring the sounds of two audio-generating neural networks trained on the sounds of the two performers, Louis Pino and Matti Pulkki.  The neural networks (named The Accordionator and The Great Percussionist In The Sky by GPT-3) are AIs who have only ever had one sensory input: the sound of their assigned performer.  They’re quirky robots trying to imitate the performers who are, in turn, trying to interact with and imitate the robots.\nMay 19, 2023\nArray Space, Toronto",
+    "tools": "",
+    "recent": true,
+    "music": true,
+    "tech": false,
+    "category": "percussion",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/u6dUdKZiKRI",
+    "attachments": ""
   },
   {
     "name": "Elemental Suite",
