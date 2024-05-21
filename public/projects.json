@@ -218,6 +218,22 @@
     "attachments": ""
   },
   {
+    "name": "Reach Through",
+    "live": "https://www.youtube.com/watch?v=YtSerbT7C5A",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1710685782/Screenshot_2024-03-17_102902_b1gtx6.png",
+    "description": "In Reach Through by Reilly Spitzfaden, the performers use a custom web app on their smartphones to send motion data to Max/MSP, as well as using microphones and small amplifiers as instruments to create feedback and other noises. In response to the performers’ gestures, the Max patch manipulates recordings of “cheesy” retro synthesizers in a way that imitates broken CDs and tapes, and plays back “databending” sounds (non-audio data treated as audio, which creates a detailed, crackling mixture of digital noise and pitch). These sounds of audio playback and/or storage media failing, and of retro 80s/90s synthesizers make me think about memory, nostalgia, and loss in a way I find aesthetically pleasing.\nMay 19, 2023\nArray Space, Toronto",
+    "tools": "",
+    "recent": true,
+    "music": true,
+    "tech": false,
+    "category": "percussion",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/YtSerbT7C5A",
+    "attachments": ""
+  },
+  {
     "name": "Elemental Suite",
     "live": "https://www.youtube.com/watch?v=83XIyVW5MeA",
     "liveTitle": "Watch Video",
