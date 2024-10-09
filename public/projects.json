@@ -14,6 +14,21 @@
     "category": "projects"
   },
   {
+    "name": "Corpus Generator",
+    "live": "https://www.youtube.com/watch?v=-4gvUik0pHE",
+    "liveTitle": "Watch Video",
+    "git": "https://github.com/LouisPino/corpus-generator",
+    "image": "https://user-images.githubusercontent.com/130365689/271838718-b0012ea2-b45c-42ab-9496-94c7245af18b.png",
+    "description": "The Corpus Generator is a full stack Flask App, interfacing with the Spotfiy API to collect data on songs based on user specified filters. This is helpful for generating a body of works to be used in corpus studies for musicologists, where the research is done by collection and analyzing  hundreds or thousands of songs. There are a lot of problems that make reliable corpus building very difficult and time consuming for researchers, so this tool will hopefully solve many of these problems.",
+    "tools": "Python, Flask, Spotify API, HTML, CSS, JavaScript",
+    "recent": true,
+    "music": false,
+    "tech": true,
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/-4gvUik0pHE",
+    "category": "projects"
+  },
+  {
     "name": "Audio Granulator",
     "live": "https://www.youtube.com/watch?v=XUhCFrkrstc",
     "liveTitle": "Watch Video",
