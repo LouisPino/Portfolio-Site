@@ -186,6 +186,21 @@
     "embedLink": "https://www.youtube.com/embed/6r3VmnepRQY?si=MkHDyw33LV3E7uze"
   },
   {
+    "name": "Back to School",
+    "live": "https://www.youtube.com/watch?v=qIau6xbAXBU",
+    "liveTitle": "Watch Video",
+    "git": "",
+    "image": "https://f4.bcbits.com/img/a1678755874_16.jpg",
+    "description": "This was an improvised performance using no-input mixer, and some other instruments, which took place on September 19th 2024 at Bickford Park in Toronto. This was part of a concert in the Back To School concert series hosted by Ministry of Phonic Services.",
+    "tools": "No-input Mixer, Percussion, Found objects",
+    "recent": true,
+    "music": true,
+    "tech": false,
+    "category": "percussion, electronics",
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/qIau6xbAXBU"
+  },
+  {
     "name": "All At Once",
     "live": "https://louispino.bandcamp.com/album/all-at-once",
     "liveTitle": "Listen",
