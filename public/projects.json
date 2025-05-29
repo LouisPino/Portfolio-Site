@@ -1,5 +1,19 @@
 [
   {
+    "name": "The Sylvan Legacy",
+    "live": "https://duocichorium.com/the-sylvan-legacy",
+    "liveTitle": "Learn More",
+    "git": "https://github.com/LouisPino/cyoa-piece",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1743883651/Promo_gif_zav6ci.gif",
+    "description": "In this piece, audience members use their smart devices to collectively control musical, visual, and narrative elements of this high fantasy choose-your-own-adventure work. Audience members choose character traits, decide which paths to travel, and determine how our heroes will respond in times of conflict.",
+    "tools": "Node.js, Max, HTML, CSS, JavaScript, Firebase",
+    "recent": true,
+    "music": true,
+    "tech": true,
+    "embed": false,
+    "category": "projects, percussion, electronics, composition"
+  },
+  {
     "name": "Audition Assistant",
     "live": "https://audition-assistant-2f2eaeaa2ec9.herokuapp.com/about/",
     "liveTitle": "Visit Site",
@@ -18,7 +32,7 @@
     "live": "https://www.youtube.com/watch?v=-4gvUik0pHE",
     "liveTitle": "Watch Video",
     "git": "https://github.com/LouisPino/corpus-generator",
-    "image": "https://user-images.githubusercontent.com/130365689/271838718-b0012ea2-b45c-42ab-9496-94c7245af18b.png",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1748531150/Screenshot_2025-05-29_110510_pcwuvp.png",
     "description": "The Corpus Generator is a full stack Flask App, interfacing with the Spotfiy API to collect data on songs based on user specified filters. This is helpful for generating a body of works to be used in corpus studies for musicologists, where the research is done by collection and analyzing  hundreds or thousands of songs. There are a lot of problems that make reliable corpus building very difficult and time consuming for researchers, so this tool will hopefully solve many of these problems.",
     "tools": "Python, Flask, Spotify API, HTML, CSS, JavaScript",
     "recent": true,
@@ -26,6 +40,21 @@
     "tech": true,
     "embed": true,
     "embedLink": "https://www.youtube.com/embed/-4gvUik0pHE",
+    "category": "projects"
+  },
+  {
+    "name": "ListenTO",
+    "live": "https://listento.netlify.app/",
+    "liveTitle": "Visit Site",
+    "git": "https://github.com/LouisPino/album-finder",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1748531150/Screenshot_2025-05-29_110510_pcwuvp.png",
+    "description": "Experimental musicians in Toronto are releasing amazing music. Click around and find something you like!",
+    "tools": "React, MongoDB/Mongoose, Express, Node.js, HTML, CSS, Auth0, OpenAI API",
+    "recent": true,
+    "music": false,
+    "tech": true,
+    "embed": false,
+    "embedLink": "",
     "category": "projects"
   },
   {
