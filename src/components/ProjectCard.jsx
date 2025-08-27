@@ -18,7 +18,7 @@ export default function ProjectCard({ project, idx }) {
                 {project.git && <a href={project.git} target="_blank">
                     <button className="project-btn"><p className="project-btn-text">Github</p></button>
                 </a>}
-                {!project.embed && <a href={project.live} target="_blank">
+                {!project.embed && project.liveTitle && < a href={project.live} target="_blank">
                     <button className="project-btn"><p className="project-btn-text">{project.liveTitle}</p></button>
                 </a>}
             </div>

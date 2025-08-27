@@ -94,14 +94,24 @@ function Projects({ scrollPosition, setScrollPosition, music, setMusic }) {
           :
           !atAbout && <div className="music-choices">
             <button className="music-choice-btn">
+              <h2 className={`music-choice link ${musicChoice === 'data' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('data'); }}>
+                DATA
+              </h2>
+            </button>
+            <button className="music-choice-btn">
               <h2 className={`music-choice link ${musicChoice === 'projects' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('projects'); }}>
                 PROJECTS
               </h2>
             </button>
 
             <button className="music-choice-btn">
-              <h2 className={`music-choice link ${musicChoice === 'portfolios' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('portfolios'); }}>
-                PORTFOLIOS
+              <h2 className={`music-choice link ${musicChoice === 'games' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('games'); }}>
+                GAMES
+              </h2>
+            </button>
+            <button className="music-choice-btn">
+              <h2 className={`music-choice link ${musicChoice === 'websites' ? " here selected-choice" : ""}`} onClick={(e) => { setMusicChoice('websites'); }}>
+                WEBSITES
               </h2>
             </button>
 

@@ -25,7 +25,7 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "projects"
+    "category": "websites"
   },
   {
     "name": "Corpus Generator",
@@ -40,7 +40,7 @@
     "tech": true,
     "embed": true,
     "embedLink": "https://www.youtube.com/embed/-4gvUik0pHE",
-    "category": "projects"
+    "category": "data"
   },
   {
     "name": "ListenTO",
@@ -55,7 +55,7 @@
     "tech": true,
     "embed": false,
     "embedLink": "",
-    "category": "projects"
+    "category": "websites"
   },
   {
     "name": "Audio Granulator",
@@ -99,7 +99,7 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "projects"
+    "category": "data"
   },
   {
     "name": "N64 Button Tracker",
@@ -113,7 +113,33 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "projects"
+    "category": "data"
+  },
+  {
+    "name": "Sylvan Dash",
+    "live": "https://louispino.github.io/sylvan-dash/",
+    "liveTitle": "Play Game",
+    "git": "https://github.com/LouisPino/sylvan-dash",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1756319081/Screenshot_2025-08-27_142411_yki0cv.png",
+    "description": "Sylvan Dash is a browser game made to promote Duo Cichorium's piece, The Sylvan Legacy.",
+    "tools": "JavaScript, HTML, CSS, FireBase",
+    "recent": false,
+    "music": false,
+    "tech": true,
+    "embed": false,
+    "category": "games"
+  },
+  {
+    "name": "Star Game",
+    "git": "https://github.com/LouisPino/star-game",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1756319510/Screenshot_2025-08-27_143132_azdbxl.png",
+    "description": "Star game is a collaboration between Micki-Lee Smith (concept), Jasmine Tsui (visuals), and myself (code). It was commissioned to accompany the live premiere of an upcoming album by Micki-Lee Smith. Players make a wish upon a grounded star, and guide it up to the sky.",
+    "tools": "JavaScript, HTML, CSS, FireBase",
+    "recent": false,
+    "music": false,
+    "tech": true,
+    "embed": false,
+    "category": "games"
   },
   {
     "name": "Bat Buster",
@@ -127,21 +153,7 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "projects"
-  },
-  {
-    "name": "Kindr",
-    "live": "https://itskindr.netlify.app/",
-    "liveTitle": "Visit Site",
-    "git": "https://github.com/LouisPino/Kindr",
-    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1694717498/Screenshot_2023-09-14_at_2.51.32_PM_tuvzhz.png",
-    "description": "Kindr is a heartwarming app designed to inspire and spread kindness in your community and beyond. With Kindr, you can create and share meaningful good deeds for others to undertake, fostering a culture of compassion and positivity. Users can participate by completing deeds posted by fellow members or by taking on the daily challenge, making each day an opportunity to make the world a better place, one act of kindness at a time.",
-    "tools": "React, MongoDB/Mongoose, Express, Node.js, HTML, CSS, Auth0, OpenAI API",
-    "recent": false,
-    "music": false,
-    "tech": true,
-    "embed": false,
-    "category": "projects"
+    "category": "games"
   },
   {
     "name": "Duo Cichorium",
@@ -155,7 +167,7 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "portfolios"
+    "category": "websites"
   },
   {
     "name": "Jaz Tsui Portfolio",
@@ -169,7 +181,7 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "portfolios"
+    "category": "websites"
   },
   {
     "name": "The Happenstancers",
@@ -183,21 +195,7 @@
     "music": false,
     "tech": true,
     "embed": false,
-    "category": "portfolios"
-  },
-  {
-    "name": "Scenic Shenanigans",
-    "live": "https://scenic-shenanigans-edd3a3d09050.herokuapp.com/",
-    "liveTitle": "Visit Site",
-    "git": "https://github.com/LouisPino/Seaside_Shenanigans_Squad",
-    "image": "https://github.com/MNieginski/Seaside_Shenanigans_Squad/blob/main/Screenshot.png?raw=true",
-    "description": "Scenic Shenanigans is a travel planner and journal. Users can add each other to various trips to plan activities and share photos with each other.",
-    "tools": "Node.js, MongoDB/Mongoose, Express, HTML, CSS, OAuth2, OpenAI API",
-    "recent": false,
-    "music": false,
-    "tech": true,
-    "embed": false,
-    "category": "projects"
+    "category": "websites"
   },
   {
     "name": "Here and There",
@@ -318,7 +316,7 @@
     "recent": true,
     "music": true,
     "tech": true,
-    "category": "percussion, electronics, composition",
+    "category": "percussion, electronics, composition, projects",
     "embed": true,
     "embedLink": "https://www.youtube.com/embed/ZDPLpN6kHEk",
     "attachment": "paper"
@@ -682,5 +680,33 @@
     "category": "percussion",
     "embed": true,
     "embedLink": "https://www.youtube.com/embed/xqFAWYPRjTw"
+  },
+  {
+    "name": "Kindr",
+    "live": "https://itskindr.netlify.app/",
+    "liveTitle": "Visit Site",
+    "git": "https://github.com/LouisPino/Kindr",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1694717498/Screenshot_2023-09-14_at_2.51.32_PM_tuvzhz.png",
+    "description": "Kindr is a heartwarming app designed to inspire and spread kindness in your community and beyond. With Kindr, you can create and share meaningful good deeds for others to undertake, fostering a culture of compassion and positivity. Users can participate by completing deeds posted by fellow members or by taking on the daily challenge, making each day an opportunity to make the world a better place, one act of kindness at a time.",
+    "tools": "React, MongoDB/Mongoose, Express, Node.js, HTML, CSS, Auth0, OpenAI API",
+    "recent": false,
+    "music": false,
+    "tech": true,
+    "embed": false,
+    "category": "websites"
+  },
+  {
+    "name": "Scenic Shenanigans",
+    "live": "https://scenic-shenanigans-edd3a3d09050.herokuapp.com/",
+    "liveTitle": "Visit Site",
+    "git": "https://github.com/LouisPino/Seaside_Shenanigans_Squad",
+    "image": "https://github.com/MNieginski/Seaside_Shenanigans_Squad/blob/main/Screenshot.png?raw=true",
+    "description": "Scenic Shenanigans is a travel planner and journal. Users can add each other to various trips to plan activities and share photos with each other.",
+    "tools": "Node.js, MongoDB/Mongoose, Express, HTML, CSS, OAuth2, OpenAI API",
+    "recent": false,
+    "music": false,
+    "tech": true,
+    "embed": false,
+    "category": "websites"
   }
 ]
