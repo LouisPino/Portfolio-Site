@@ -196,6 +196,7 @@
     width: 90%;
   }
 
+
   .bandcamp-iframe {
     min-height: 350px;
   }
@@ -226,6 +227,10 @@
 
   .project-card {
     width: 95vw;
+  }
+
+  .project-info>h1 {
+    font-size: 32px;
   }
 
   #about-bio {
