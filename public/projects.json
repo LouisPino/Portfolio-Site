@@ -58,6 +58,20 @@
     "category": "websites"
   },
   {
+    "name": "With What You Are Connected (Where are my eyes?)",
+    "live": "https://www.youtube.com/watch?v=xwfDYj6mkA0",
+    "liveTitle": "Watch Video",
+    "image": "https://res.cloudinary.com/dsvcyich1/image/upload/v1758720506/IMG_6304_kzoobd.jpg",
+    "description": "The third \"Where Am I?\" instrument, premiered at CoexisJAM alongside Heather Saumer.",
+    "tools": "Arduino",
+    "recent": true,
+    "music": true,
+    "tech": true,
+    "embed": true,
+    "embedLink": "https://www.youtube.com/embed/xwfDYj6mkA0",
+    "category": "projects, percussion, electronics"
+  },
+  {
     "name": "Audio Granulator",
     "live": "https://www.youtube.com/watch?v=XUhCFrkrstc",
     "liveTitle": "Watch Video",
